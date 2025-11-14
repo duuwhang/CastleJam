@@ -1,5 +1,7 @@
 using System;
 using System.Numerics;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -20,18 +22,34 @@ public class EnemyMovement : MonoBehaviour
     }
     void Update()
     {
-
+        // --- Patrol Movement ---
         currentMoveDistance = currentMoveDistance + 1 * Time.deltaTime * multiplier;
-
         UnityEngine.Vector2 position = transform.position;
         position += moveVector * speed * direction * Time.deltaTime;
         transform.position = position;
 
-        Debug.Log(currentMoveDistance);
         if (moveDistance <= currentMoveDistance)
         {
             direction = direction * negative;
             currentMoveDistance = 0;
         }
+
+
+    }
+
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        // --- Wall Detection ---
+        Debug.Log(collision);
+        //FÜr einzelne Objekte gut
+        // collision.attachedRigidbody.gameObject.tag != "Player";
+
+        if (collision)
+        {
+            direction = direction * negative;
+            currentMoveDistance = moveDistance - currentMoveDistance;
+        }
+
     }
 }
