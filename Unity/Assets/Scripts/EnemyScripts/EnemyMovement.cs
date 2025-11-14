@@ -1,9 +1,6 @@
 using System;
 using System.Numerics;
-using System.Runtime.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -15,85 +12,26 @@ public class EnemyMovement : MonoBehaviour
     UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
     int negative = -1;
     int direction = 1;
-    bool collided;
-    Transform playerLocation;
-    bool huntState;
-    [SerializeField] int aggroTime;
-    float aggroCounter = 0f;
 
 
     void Start()
     {
         float currentMoveDistance = distance;
-
-        playerLocation = GameObject.FindWithTag("Player").transform;
-        huntState = false;
     }
     void Update()
     {
-        // --- Patrol Movement ---
-        if (huntState) 
-        {
-            ChasePlayer();
-            return;
-        }
 
-        Patrol();
-    }
-
-    void Patrol()
-    {
         currentMoveDistance = currentMoveDistance + 1 * Time.deltaTime * multiplier;
+
         UnityEngine.Vector2 position =  transform.position;
         position += moveVector * speed * direction * Time.deltaTime;
         transform.position = position;
         
+        Debug.Log(currentMoveDistance);
         if (moveDistance <= currentMoveDistance) 
         {
             direction = direction * negative;
             currentMoveDistance = 0;
         }
     }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        // --- Wall Detection ---
-        //FÜr einzelne Objekte gut
-        // collision.attachedRigidbody.gameObject.tag != "Player";
-        if (collision != null) collided = true;
-        else collided = false;
-    }
-    public void TurnAround()
-    {
-        // --- Das für Wall Turning ---
-        if (collided)
-        {
-            direction = direction * negative;
-            currentMoveDistance = moveDistance - currentMoveDistance;
-        }
-    }
-    public void ChasePlayer()
-    {
-        // --- Der Enemy versucht zum Spieler zu gelangen kommt aber nicht durch Wände oder über Blöcke wäre auch gut wenn er dafür nicht
-        // fallen müsste hat nämlich keine Gravity bisher ---
-        if (playerLocation == null) return;
-
-        huntState = true;
-        UnityEngine.Vector3 playerDirection = playerLocation.position - transform.position;
-        playerDirection.y = 0;
-        playerDirection = playerDirection.normalized;
-        Debug.Log(playerDirection);
-
-        transform.position += playerDirection * speed * Time.deltaTime;
-
-        aggroCounter += Time.deltaTime;
-        Debug.Log(aggroCounter);
-        if (aggroCounter >= aggroTime)
-        {
-            huntState = false;
-            aggroCounter = 0;
-        }
-    }
-
-    
 }
