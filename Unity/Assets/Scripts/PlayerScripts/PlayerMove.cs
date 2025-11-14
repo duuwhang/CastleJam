@@ -72,4 +72,12 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
         }
     }
+       private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+            
+        }
+    }
 }
