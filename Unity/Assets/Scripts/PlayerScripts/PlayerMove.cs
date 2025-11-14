@@ -9,21 +9,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpHeight;
     [SerializeField] private InputActionReference jump;
     [SerializeField] private InputActionReference dash;
-
     [SerializeField] public float gravity;
     Vector2 movement = new Vector2();
-    public Rigidbody2D rb;
+    public Rigidbody2D rigidBody;
     bool isGrounded;
-
     public Vector3 moveDirection;
     public float maxDashTime = 1.0f;
     [SerializeField] public float dashSpeed = 5.0f;
     public float dashStoppingSpeed = 0.1f;
-
     private float currentDashTime;
+
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
@@ -31,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnJump(InputAction.CallbackContext context)
     {
-        Debug.Log("We jump1.");
         if (isGrounded)
         {
             isGrounded = false;
@@ -41,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDash(InputAction.CallbackContext context)
     {
-        Debug.Log("We dash1.");
         currentDashTime = 0.0f;
     }
 
@@ -58,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             xMovement *= dashSpeed;
             currentDashTime += dashStoppingSpeed;
         }
-        
+
         position.x += xMovement;
         position.y += movement.y * Time.deltaTime * jumpHeight;
         transform.position = position;
@@ -76,6 +72,4 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
         }
     }
-
-
 }
