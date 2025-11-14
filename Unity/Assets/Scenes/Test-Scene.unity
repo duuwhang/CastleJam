@@ -264,6 +264,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4530551528087030194, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530551528087030194, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: gravity
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530551528087030194, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: jumpHeight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014423035265291197, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014423035265291197, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014423035265291197, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5354504718583199350, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
