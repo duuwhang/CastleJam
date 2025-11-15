@@ -45,17 +45,18 @@ public class EnemyMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         // --- Wall Detection ---
-        Debug.Log(collision);
         //FÜr einzelne Objekte gut
         // collision.attachedRigidbody.gameObject.tag != "Player";
-        if (collision) collided = true;
+        if (collision != null) collided = true;
         else collided = false;
     }
     public void TurnAround()
     {
+        Debug.Log("Wir gehen in Turn Around");
         // --- Das für Wall Turning ---
         if (collided)
         {
+            Debug.Log("Wir Colliden mit Wall");
             direction = direction * negative;
             currentMoveDistance = moveDistance - currentMoveDistance;
         }
