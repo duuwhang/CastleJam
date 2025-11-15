@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   speed: 5
   moveDistance: 40
-  aggroTime: 0
+  aggroTime: 6
 --- !u!50 &400307921882479724
 Rigidbody2D:
   serializedVersion: 5
