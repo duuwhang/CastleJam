@@ -1,10 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 6170ff796664122489cab5e0c72667c9
-=======
-<<<<<<<< HEAD:Unity/Assets/Scripts/CollisionScripts.cs.meta
-guid: b4a399c3c50925647b738c1cc2b8e44d
->>>>>>> 6798dbee (stand drehung enemy iwie)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
