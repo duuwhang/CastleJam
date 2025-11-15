@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class EnemyAttack : MonoBehaviour
         attackOnCooldown = true;
         inRange = false;
         currentWindUpTime = 1f;
-        DamageAreaActive = false;
         AttackArea.SetActive(false);
     }
 
@@ -32,6 +32,8 @@ public class EnemyAttack : MonoBehaviour
         {
             DoAttack();
             currentWindUpTime = 1f;
+            AttackArea.SetActive(false);
+
         }
     }
 
@@ -42,9 +44,10 @@ public class EnemyAttack : MonoBehaviour
 
     public void DoAttack()
     {
-        DamageAreaActive = true;
+        this.gameObject.TryGetComponent<EnemyMovement>(out EnemyMovement moveScript);
+        moveScript.enabled = false;
         AttackArea.SetActive(true);
-        DamageAreaActive = false;
+        moveScript.enabled = true;
     }
 
     public void DoDamage(GameObject Player)
