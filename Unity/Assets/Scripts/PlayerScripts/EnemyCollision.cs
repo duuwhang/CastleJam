@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerCollisionDetect : MonoBehaviour
+public class EnemyCollisionDetect : MonoBehaviour
 {
     public UnityEvent PlayerDetection;
 
@@ -14,7 +14,7 @@ public class PlayerCollisionDetect : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D PlayerDetector)
     {
-    if (PlayerDetector.CompareTag("Player"))
+    if (PlayerDetector.CompareTag("Enemy"))
         {
             PlayerDetection.Invoke();
         }

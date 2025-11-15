@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerCollisionDetect : MonoBehaviour
+public class EnemyCollisions : MonoBehaviour
 {
     public UnityEvent PlayerDetection;
 

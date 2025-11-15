@@ -19,12 +19,12 @@ public class Health : MonoBehaviour
     {
         CurrentHealth = MaxHealth;
         heal.action.performed += Heal;
-        damage.action.performed += Damage;
+
     }
 
-    private void Damage(InputAction.CallbackContext context)
+    public void Damage()
     {
-
+        Debug.Log("Damage");
         CurrentHealth -= TestDamage;
         if (CurrentHealth <= 0)
         {
@@ -39,6 +39,8 @@ public class Health : MonoBehaviour
         CurrentHealth += TestHeal;
         if (CurrentHealth > MaxHealth) CurrentHealth = MaxHealth;
     }
+
+    
 
     // Update is called once per frame
     void Update()

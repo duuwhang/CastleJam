@@ -82,12 +82,10 @@ public class EnemyMovement : MonoBehaviour
         UnityEngine.Vector3 playerDirection = playerLocation.position - transform.position;
         playerDirection.y = 0;
         playerDirection = playerDirection.normalized;
-        Debug.Log(playerDirection);
 
         transform.position += playerDirection * speed * Time.deltaTime;
 
         aggroCounter += Time.deltaTime;
-        Debug.Log(aggroCounter);
         if (aggroCounter >= aggroTime)
         {
             huntState = false;

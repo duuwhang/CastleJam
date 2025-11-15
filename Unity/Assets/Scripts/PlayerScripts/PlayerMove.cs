@@ -76,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (hit)
         {
-            Debug.Log("hit");
             float distance = hit.point.x - transform.position.x - width / 2;
             if (distance < xMovement)
             {

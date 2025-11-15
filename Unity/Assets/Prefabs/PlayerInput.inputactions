@@ -41,15 +41,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Damage",
-                    "type": "Button",
-                    "id": "bf93fa52-abba-4405-a2af-5613b20c5056",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -160,17 +151,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Heal",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7a8ecbb9-479b-4fba-879b-a1ac865f3445",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Damage",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
