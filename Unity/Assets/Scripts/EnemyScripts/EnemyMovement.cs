@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
     Transform playerLocation;
     bool huntState;
     [SerializeField] int aggroTime;
-    int aggroCounter = 0;
+    float aggroCounter = 0f;
 
 
     void Start()
@@ -32,7 +32,17 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         // --- Patrol Movement ---
-        if (huntState) return;
+        if (huntState)
+        {
+            ChasePlayer();
+            return;
+        }
+
+        Patrol();
+    }
+
+    void Patrol()
+    {
         currentMoveDistance = currentMoveDistance + 1 * Time.deltaTime * multiplier;
         UnityEngine.Vector2 position = transform.position;
         position += moveVector * speed * direction * Time.deltaTime;
@@ -43,8 +53,6 @@ public class EnemyMovement : MonoBehaviour
             direction = direction * negative;
             currentMoveDistance = 0;
         }
-
-
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -66,24 +74,26 @@ public class EnemyMovement : MonoBehaviour
     }
     public void ChasePlayer()
     {
-        // --- Check if it is actually the Player because generalized one does not do that ---
-        // --- Or we fuck it and make one specifically for the Player because I do not understand it ---
-        Debug.Log("The Hunt is on!");
+        // --- Der Enemy versucht zum Spieler zu gelangen kommt aber nicht durch Wände oder über Blöcke wäre auch gut wenn er dafür nicht
+        // fallen müsste hat nämlich keine Gravity bisher ---
         if (playerLocation == null) return;
-        huntState = true;
-        while (aggroCounter < aggroTime)
-        {
-        Debug.Log("We chasing now");
-        UnityEngine.Vector3 direction = playerLocation.position - transform.position;
-        direction.y = 0;
-        
-        direction = direction.normalized;
 
-        transform.position += direction * speed * Time.deltaTime;
-        aggroCounter++;
+        huntState = true;
+        UnityEngine.Vector3 playerDirection = playerLocation.position - transform.position;
+        playerDirection.y = 0;
+        playerDirection = playerDirection.normalized;
+        Debug.Log(playerDirection);
+
+        transform.position += playerDirection * speed * Time.deltaTime;
+
+        aggroCounter += Time.deltaTime;
+        Debug.Log(aggroCounter);
+        if (aggroCounter >= aggroTime)
+        {
+            huntState = false;
+            aggroCounter = 0;
         }
-        huntState = false;
-        aggroCounter = 0;
     }
+
 
 }
