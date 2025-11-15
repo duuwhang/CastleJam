@@ -14,7 +14,6 @@ public class CollisionDetect : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Event gets invoked");
         CollisionDetection.Invoke();
     }
 }
