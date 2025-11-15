@@ -354,7 +354,7 @@ MonoBehaviour:
   jumpHeight: 20
   jump: {fileID: -1274357349905945733, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dash: {fileID: 3142992586761556817, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  gravity: 0.05
+  gravity: 3
   rigidBody: {fileID: 0}
   maxDashTime: 1
   dashSpeed: 5
