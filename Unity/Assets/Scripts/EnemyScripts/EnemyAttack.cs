@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -7,6 +8,8 @@ public class EnemyAttack : MonoBehaviour
     bool inRange;
     float windUpTime;
     float currentWindUpTime;
+    public GameObject AttackArea;
+
 
     void Start()
     {
@@ -14,7 +17,7 @@ public class EnemyAttack : MonoBehaviour
         inRange = false;
         currentWindUpTime = 0f;
         DamageAreaActive = false;
-        gameObject.SetActive(DamageAreaActive);
+        AttackArea.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,7 +43,7 @@ public class EnemyAttack : MonoBehaviour
     public void DoAttack()
     {
         DamageAreaActive = true;
-        gameObject.SetActive(DamageAreaActive);
+        AttackArea.SetActive(true);
         DamageAreaActive = false;
     }
 }
