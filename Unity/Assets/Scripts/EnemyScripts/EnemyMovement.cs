@@ -22,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     float aggroCounter = 0f;
 
 
+
     void Start()
     {
         float currentMoveDistance = distance;
@@ -82,17 +83,20 @@ public class EnemyMovement : MonoBehaviour
         UnityEngine.Vector3 playerDirection = playerLocation.position - transform.position;
         playerDirection.y = 0;
         playerDirection = playerDirection.normalized;
-        Debug.Log(playerDirection);
 
         transform.position += playerDirection * speed * Time.deltaTime;
 
         aggroCounter += Time.deltaTime;
-        Debug.Log(aggroCounter);
         if (aggroCounter >= aggroTime)
         {
             huntState = false;
             aggroCounter = 0;
         }
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);            
     }
 
     
