@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         // --- Patrol Movement ---
-        if (huntState) 
+        if (huntState)
         {
             ChasePlayer();
             return;
@@ -44,11 +44,11 @@ public class EnemyMovement : MonoBehaviour
     void Patrol()
     {
         currentMoveDistance = currentMoveDistance + 1 * Time.deltaTime * multiplier;
-        UnityEngine.Vector2 position =  transform.position;
+        UnityEngine.Vector2 position = transform.position;
         position += moveVector * speed * direction * Time.deltaTime;
         transform.position = position;
-        
-        if (moveDistance <= currentMoveDistance) 
+
+        if (moveDistance <= currentMoveDistance)
         {
             direction = direction * negative;
             currentMoveDistance = 0;
@@ -62,6 +62,8 @@ public class EnemyMovement : MonoBehaviour
         // collision.attachedRigidbody.gameObject.tag != "Player";
         if (collision != null) collided = true;
         else collided = false;
+
+        if (collision.gameObject.TryGetComponent<Health>(out Health health)) { health.Damage(155); }
     }
     public void TurnAround()
     {
@@ -93,5 +95,5 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    
+
 }

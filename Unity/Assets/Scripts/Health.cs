@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
     public int CurrentHealth;
 
     int TestHeal = 5;
-    int TestDamage = 5;
+    const int TestDamage = 5;
 
     void Start()
     {
@@ -22,10 +22,10 @@ public class Health : MonoBehaviour
 
     }
 
-    public void Damage()
+    public void Damage(int amount = TestDamage)
     {
         Debug.Log("Damage");
-        CurrentHealth -= TestDamage;
+        CurrentHealth -= amount;
         if (CurrentHealth <= 0)
         {
             CurrentHealth = 0;
