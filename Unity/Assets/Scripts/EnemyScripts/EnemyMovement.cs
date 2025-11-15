@@ -28,7 +28,6 @@ public class EnemyMovement : MonoBehaviour
 
 
 
-
     void Start()
     {
         float currentMoveDistance = distance;
@@ -104,7 +103,7 @@ public class EnemyMovement : MonoBehaviour
         playerDirection.y = 0;
         playerDirection = playerDirection.normalized;
 
-        transform.position += playerDirection * speed * Time.deltaTime;
+        transform.position += playerDirection * speed * Time.deltaTime / 2;
 
         aggroCounter += Time.deltaTime;
         if (aggroCounter >= aggroTime)
