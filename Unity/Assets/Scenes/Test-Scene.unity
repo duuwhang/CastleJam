@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 1551278641}
   - component: {fileID: 1551278640}
   - component: {fileID: 1551278642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,6 +545,10 @@ PrefabInstance:
     - target: {fileID: 4530551528087030194, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
       propertyPath: jumpHeight
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530551528087030194, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+      propertyPath: distanceMod
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5354504718583199350, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
       propertyPath: m_LocalPosition.x

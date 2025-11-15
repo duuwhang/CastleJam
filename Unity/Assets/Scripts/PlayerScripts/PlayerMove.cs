@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
     [SerializeField] private InputActionReference dash;
     [SerializeField] public float gravity;
+    [SerializeField] public float distanceMod;
     Vector2 movement = new Vector2();
     public float floatHeight;     // Desired floating height.
     public float liftForce;       // Force to apply when lifting the rigidbody.
@@ -33,11 +34,6 @@ public class PlayerMovement : MonoBehaviour
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
-
-        if (TryGetComponent(out Health health))
-        {
-            health.Died += () => this.enabled = false;
-        }
     }
 
     private void OnJump(InputAction.CallbackContext context)
@@ -68,19 +64,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         position.y += movement.y * Time.deltaTime * jumpHeight;
+        float width = GetComponentInChildren<BoxCollider2D>().bounds.size.x;
+        Vector3 pos = new Vector3(transform.position.x + width * 1.1f / 2, 0, 0);
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, dashSpeed * 10, layerMask);
+        RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.right, 100);
 
-
-        if (hit && xMovement != 0)
+        if (hit)
         {
-            float distance = hit.point.x - transform.position.x;
-            Debug.Log("Distance: " + distance);
-            Debug.Log("xMovement: " + xMovement);
-
+            Debug.Log("hit");
+            float distance = hit.point.x - transform.position.x - width / 2;
             if (distance < xMovement)
             {
-                Debug.Log("inside distance if");
                 xMovement = distance;
             }
         }
