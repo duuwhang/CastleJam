@@ -356,8 +356,8 @@ MonoBehaviour:
   dash: {fileID: 3142992586761556817, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   gravity: 3
   rigidBody: {fileID: 0}
-  maxDashTime: 1
-  dashSpeed: 5
+  maxDashTime: 5
+  dashSpeed: 50
   dashStoppingSpeed: 0.1
 --- !u!114 &1986207098733773219
 MonoBehaviour:
