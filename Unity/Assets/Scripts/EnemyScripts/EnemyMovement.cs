@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     float distance = 0;
     float currentMoveDistance = 0;
     int multiplier = 10;
-    UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
+    public UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
     int negative = -1;
     int direction = 1;
     bool collided;
