@@ -166,6 +166,6 @@ InitTestScene*.unity*
 _Recovery/
 _Recovery*
 
-# Asprite meta files
-*.aseprite.meta
+# Unity meta files
+*.meta
 
