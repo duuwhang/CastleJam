@@ -792,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4401191799637738725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
       propertyPath: aggroTime
-      value: 100
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5841574393521905276, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
       propertyPath: m_LocalPosition.x
