@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference dash;
     [SerializeField] public float gravity;
     Vector2 movement = new Vector2();
+    public float floatHeight;     // Desired floating height.
+    public float liftForce;       // Force to apply when lifting the rigidbody.
+    public float damping;         // Force reduction proportional to speed (reduces bouncing).
     public Rigidbody2D rigidBody;
     bool isGrounded;
     public Vector3 moveDirection;
@@ -19,9 +22,13 @@ public class PlayerMovement : MonoBehaviour
     public float dashStoppingSpeed = 0.1f;
     private float currentDashTime;
 
+    LayerMask layerMask;
+
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+
+        layerMask = LayerMask.GetMask("Wall");
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
@@ -40,7 +47,6 @@ public class PlayerMovement : MonoBehaviour
     {
         currentDashTime = 0.0f;
     }
-
     private void Update()
     {
         if (!isGrounded)
@@ -55,8 +61,25 @@ public class PlayerMovement : MonoBehaviour
             currentDashTime += dashStoppingSpeed;
         }
 
-        position.x += xMovement;
         position.y += movement.y * Time.deltaTime * jumpHeight;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, dashSpeed * 10, layerMask);
+
+
+        if (hit && xMovement != 0)
+        {
+            float distance = hit.point.x - transform.position.x;
+            Debug.Log("Distance: " + distance);
+            Debug.Log("xMovement: " + xMovement);
+
+            if (distance < xMovement)
+            {
+                Debug.Log("inside distance if");
+                xMovement = distance;
+            }
+        }
+        position.x += xMovement;
+
         transform.position = position;
     }
 
@@ -72,12 +95,14 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
         }
     }
-       private void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
-            
+
         }
     }
 }
+
+
