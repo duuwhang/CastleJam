@@ -3,6 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
@@ -32,6 +33,11 @@ public class PlayerMovement : MonoBehaviour
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
+
+        if (TryGetComponent(out Health health))
+        {
+            health.Died += () => this.enabled = false;
+        }
     }
 
     private void OnJump(InputAction.CallbackContext context)
