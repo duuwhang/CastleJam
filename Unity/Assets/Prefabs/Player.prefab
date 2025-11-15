@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5895525854490287440}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,14 +351,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 10
-  jumpHeight: 10
+  jumpHeight: 30
   jump: {fileID: -1274357349905945733, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dash: {fileID: 3142992586761556817, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   gravity: 0.02
+  distanceMod: 0.1
+  floatHeight: 0
+  liftForce: 0
+  damping: 0
   rigidBody: {fileID: 0}
   moveDirection: {x: 0, y: 0, z: 0}
   maxDashTime: 1
-  dashSpeed: 5
+  dashSpeed: 7
   dashStoppingSpeed: 0.1
 --- !u!114 &1986207098733773219
 MonoBehaviour:

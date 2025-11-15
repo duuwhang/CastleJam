@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
+
+        if (TryGetComponent(out Health health))
+        {
+            health.Died += () => this.enabled = false;
+        }
     }
 
     private void OnJump(InputAction.CallbackContext context)

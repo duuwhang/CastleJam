@@ -1,21 +1,31 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Health : MonoBehaviour
 {
     public Action Died;
 
-    public int MaxHealth;
+    [SerializeField] public int MaxHealth;
+
+    [SerializeField] private InputActionReference heal;
+    [SerializeField] private InputActionReference damage;
     public int CurrentHealth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    int TestHeal = 5;
+    int TestDamage = 5;
+
     void Start()
     {
-
+        CurrentHealth = MaxHealth;
+        heal.action.performed += Heal;
+        damage.action.performed += Damage;
     }
 
-    void Damage(int amount)
+    private void Damage(InputAction.CallbackContext context)
     {
-        CurrentHealth -= amount;
+
+        CurrentHealth -= TestDamage;
         if (CurrentHealth <= 0)
         {
             CurrentHealth = 0;
@@ -24,9 +34,9 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void Heal(int amount)
+    private void Heal(InputAction.CallbackContext context)
     {
-        CurrentHealth += amount;
+        CurrentHealth += TestHeal;
         if (CurrentHealth > MaxHealth) CurrentHealth = MaxHealth;
     }
 
