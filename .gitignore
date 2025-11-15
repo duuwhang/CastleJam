@@ -162,3 +162,10 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /Unity/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
+# Unity recovery files
+_Recovery/
+_Recovery*
+
+# Unity meta files
+*.meta
+

@@ -1,0 +1,3 @@
+Also Enemys können jetzt platziert warden als Prefabs dort wo sie plaziert warden ist der linkeste Punkt den sie jemals erreichen warden sie gehen dann nach recht (wie weit und wie schnell kann man anpassen) sollten sie auf eine Wand oder einen anderen Enemy treffen drehen sie um und gehen zum Startplatz zurück.
+
+Wenn sie den Spieler "sehen" er die PlayerDetection Area betritt versuchen sie so gut es geht zu ihm zu laufen in einer geraden Linie sie haben keine Schwerkraft also bitte nicht mobben. Wenn der Spieler aus der Aggro Range ist haben sie noch einen Countdown wie lange sie ihn noch verfolgen bis sie von dem Punkt aus wieder ihre Patroulie anfangen 
