@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9faced391b2b41f6486e8e065a17ade6
+guid: 572ffe7299435848cac72c8e0c5eb7ad
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Blocks
+  - name: Enemy
     originalName: 
-    pivot: {x: 0.72727275, y: -2.2}
+    pivot: {x: 0.58986175, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 176
-      height: 80
-    spriteID: f8443335c0f873c9489b138ae8105099
+      width: 217
+      height: 256
+    spriteID: 11c7e2d30f7c8db4e8ae43f1843e281f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 605380288
+      value0: 1816890106
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Blocks
+    name: Enemy
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Blocks
+    - name: Enemy
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
-        y: 176
-        width: 176
-        height: 80
-      spriteId: f8443335c0f873c9489b138ae8105099
+        y: 0
+        width: 217
+        height: 256
+      spriteId: 11c7e2d30f7c8db4e8ae43f1843e281f
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -182,4 +182,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 256, y: 256}
-  previousTextureSize: {x: 256, y: 128}
+  previousTextureSize: {x: 256, y: 512}
