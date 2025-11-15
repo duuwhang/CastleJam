@@ -63,6 +63,8 @@ public class EnemyMovement : MonoBehaviour
         // collision.attachedRigidbody.gameObject.tag != "Player";
         if (collision != null) collided = true;
         else collided = false;
+
+        if (collision.gameObject.TryGetComponent<Health>(out Health health)) { health.Damage(155); }
     }
     public void TurnAround()
     {

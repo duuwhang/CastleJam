@@ -11,7 +11,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference jump;
     [SerializeField] private InputActionReference dash;
     [SerializeField] public float gravity;
+    [SerializeField] public float distanceMod;
     Vector2 movement = new Vector2();
+    public float floatHeight;     // Desired floating height.
+    public float liftForce;       // Force to apply when lifting the rigidbody.
+    public float damping;         // Force reduction proportional to speed (reduces bouncing).
     public Rigidbody2D rigidBody;
     bool isGrounded;
     [SerializeField] public float maxDashTime;
@@ -31,6 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
+
+        if (TryGetComponent(out Health health))
+        {
+            health.Died += () => this.enabled = false;
+        }
     }
 
     private void OnJump(InputAction.CallbackContext context)
@@ -46,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
     {
         currentDashTime = 0.0f;
     }
-
     private void Update()
     {
         movement.y -= gravity * Time.deltaTime;
@@ -74,11 +82,6 @@ public class PlayerMovement : MonoBehaviour
         position.y += yMovement;
 
         transform.position = position;
-
-        if(health == 0)
-        {
-            Die();
-        }
     }
 
     public void GetPlayerMovement(InputAction.CallbackContext context)
@@ -140,15 +143,5 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         return yMovement;
-    }
-
-    public void TakeDamage()
-    {
-        health--;
-    }
-
-    public void Die()
-    {
-        
     }
 }
