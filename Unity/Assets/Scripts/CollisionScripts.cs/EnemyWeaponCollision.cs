@@ -14,7 +14,7 @@ public class WeaponCollisionDetect : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D PlayerDetector)
     {
-    if (PlayerDetector.CompareTag("Weapon"))
+    if (PlayerDetector.CompareTag("PlayerWeapon"))
         {
             WeaponDetection.Invoke();
         }

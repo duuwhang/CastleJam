@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float dashSpeed = 5.0f;
     public float dashStoppingSpeed = 0.1f;
     private float currentDashTime;
+    int health = 3;
 
     private void Start()
     {
@@ -58,6 +59,11 @@ public class PlayerMovement : MonoBehaviour
         position.x += xMovement;
         position.y += movement.y * Time.deltaTime * jumpHeight;
         transform.position = position;
+
+        if(health == 0)
+        {
+            Die();
+        }
     }
 
     public void GetPlayerMovement(InputAction.CallbackContext context)
@@ -79,5 +85,15 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
             
         }
+    }
+
+    public void TakeDamage()
+    {
+        health--;
+    }
+
+    public void Die()
+    {
+        
     }
 }
