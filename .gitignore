@@ -167,5 +167,4 @@ _Recovery/
 _Recovery*
 
 # Unity meta files
-*.meta
-
+*aseprite.meta
