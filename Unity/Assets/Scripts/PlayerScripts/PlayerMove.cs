@@ -45,10 +45,10 @@ public class PlayerMovement : MonoBehaviour
     {
         currentDashTime = 0.0f;
     }
+
     private void Update()
     {
-
-        movement.y -= gravity;
+        movement.y -= gravity * Time.deltaTime;
 
         Vector2 position = transform.position;
         float xMovement = movement.x * Time.deltaTime * speed;
