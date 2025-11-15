@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float gravity;
     [SerializeField] public LayerMask RayCastLayer;
     Vector2 movement = new Vector2();
+    public float floatHeight;     // Desired floating height.
+    public float liftForce;       // Force to apply when lifting the rigidbody.
+    public float damping;         // Force reduction proportional to speed (reduces bouncing).
     public Rigidbody2D rigidBody;
     bool isGrounded;
     [SerializeField] public float maxDashTime;
