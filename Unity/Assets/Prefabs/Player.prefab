@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 5014423035265291197}
   - component: {fileID: 4530551528087030194}
   - component: {fileID: 1986207098733773219}
+  - component: {fileID: 1007713439174153809}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -354,7 +355,7 @@ MonoBehaviour:
   jump: {fileID: -1274357349905945733, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dash: {fileID: 3142992586761556817, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   gravity: 0.02
-  rb: {fileID: 0}
+  rigidBody: {fileID: 0}
   moveDirection: {x: 0, y: 0, z: 0}
   maxDashTime: 1
   dashSpeed: 5
@@ -437,3 +438,17 @@ MonoBehaviour:
   m_DefaultActionMap: PlayerInput
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1007713439174153809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7844928440637743598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6013d1e598e54174992f0ff5600a169b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  MaxHealth: 100
+  CurrentHealth: 100
