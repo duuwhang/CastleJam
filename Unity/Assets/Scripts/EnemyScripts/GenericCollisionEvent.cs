@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EnemyTurnAround : MonoBehaviour
+public class CollisionDetect : MonoBehaviour
 {
     public UnityEvent CollisionDetection;
 
@@ -12,8 +12,9 @@ public class EnemyTurnAround : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("Event gets invoked");
         CollisionDetection.Invoke();
     }
 }
