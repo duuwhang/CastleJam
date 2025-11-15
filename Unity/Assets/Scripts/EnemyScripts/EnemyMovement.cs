@@ -3,6 +3,7 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -14,11 +15,15 @@ public class EnemyMovement : MonoBehaviour
     UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
     int negative = -1;
     int direction = 1;
+    bool collided;
+    Transform playerLocation;
 
 
     void Start()
     {
         float currentMoveDistance = distance;
+
+        playerLocation = GameObject.FindWithTag("Player").transform;
     }
     void Update()
     {
@@ -37,19 +42,34 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         // --- Wall Detection ---
         Debug.Log(collision);
         //FÜr einzelne Objekte gut
         // collision.attachedRigidbody.gameObject.tag != "Player";
-
-        if (collision)
+        if (collision) collided = true;
+        else collided = false;
+    }
+    public void TurnAround()
+    {
+        // --- Das für Wall Turning ---
+        if (collided)
         {
             direction = direction * negative;
             currentMoveDistance = moveDistance - currentMoveDistance;
         }
-        
     }
+    public void ChasePlayer()
+    {
+        if (playerLocation == null) return;
+
+        UnityEngine.Vector3 direction = playerLocation.position - transform.position;
+        direction.y = 0;
+
+        direction = direction.normalized;
+
+        transform.position += direction * speed * Time.deltaTime;
+    }
+    
 }
