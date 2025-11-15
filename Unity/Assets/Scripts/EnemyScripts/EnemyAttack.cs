@@ -1,62 +1,84 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+[RequireComponent(typeof(EnemyMovement))]
 public class EnemyAttack : MonoBehaviour
 {
-    bool DamageAreaActive;
-    bool attackOnCooldown;
-    bool inRange;
-    [SerializeField] float windUpTime;
-    float currentWindUpTime;
-    public GameObject AttackArea;
+    enum AttackState { READY, WINDUP, ATTACKING, COOLDOWN }
+    private AttackState attackState;
 
-    
-    
+    private EnemyMovement movement;
+
+    [SerializeField] float windUpTime;
+    [SerializeField] float attackDuration; 
+    [SerializeField] float cooldownDuration;
+
+    float currentattackDuration;
+    float currentWindUpTime;
+    float currentCooldownTime;
+
+    public GameObject AttackArea;
 
     void Start()
     {
-        attackOnCooldown = true;
-        inRange = false;
-        currentWindUpTime = 1f;
-        AttackArea.SetActive(false);
-    } 
+        movement = GetComponent<EnemyMovement>();
+    }
 
-    // Update is called once per frame
     void Update()
     {
-        if (inRange)
+        switch (attackState)
         {
-            currentWindUpTime += currentWindUpTime * Time.deltaTime;
-            Debug.Log(currentWindUpTime);
-        }
-
-        if (currentWindUpTime >= windUpTime)
-        {
-            DoAttack();
-            currentWindUpTime = 1f;
-            AttackArea.SetActive(false);
-            
+            case AttackState.WINDUP:
+                currentWindUpTime += Time.deltaTime;
+                if (currentWindUpTime >= windUpTime) DoAttack();
+                break;
+            case AttackState.ATTACKING:
+                currentattackDuration += Time.deltaTime;
+                if (currentattackDuration >= attackDuration) EndAttack();
+                break;
+            case AttackState.COOLDOWN:
+                currentCooldownTime += Time.deltaTime;
+                if(currentCooldownTime >= cooldownDuration) attackState = AttackState.READY;
+                break;
         }
     }
 
-    public void AttackRangeDetection()
+    private void EndAttack()
     {
-        inRange = true;
+        attackState = AttackState.COOLDOWN;
+        AttackArea.SetActive(false);
+
+        movement.enabled = true;
+    }
+
+    public void Attack()
+    {
+        if (attackState != AttackState.READY) return;
+
+        attackState = AttackState.WINDUP;
+        currentWindUpTime = 0;
+
+        movement.enabled = false;
     }
 
     public void DoAttack()
     {
-        this.gameObject.TryGetComponent<EnemyMovement>(out EnemyMovement moveScript);
-        moveScript.enabled  = false;
-        AttackArea.SetActive(true); 
-        moveScript.enabled = true;
+        attackState = AttackState.ATTACKING;
+
+        Debug.Log("Attack wird ausgeführt");
+
+        AttackArea.SetActive(true);
+        currentattackDuration = 0;
     }
 
     public void DoDamage(GameObject Player)
     {
         Debug.Log("Damage");
+
         Player.TryGetComponent<Health>(out Health healthValue);
         healthValue.Damage(1);
     }
+
 }

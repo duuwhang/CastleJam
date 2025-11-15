@@ -12,7 +12,7 @@ public class EnemyMovement : MonoBehaviour
     float distance = 0;
     float currentMoveDistance = 0;
     int multiplier = 10;
-    public UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
+    UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
     int negative = -1;
     int direction = 1;
     bool collided;
@@ -20,6 +20,14 @@ public class EnemyMovement : MonoBehaviour
     public bool huntState;
     [SerializeField] int aggroTime;
     float aggroCounter = 0f;
+
+    public GameObject AggroArea;
+
+    public GameObject DamageArea;
+
+    public GameObject AttackRange;
+
+
 
 
     void Start()
@@ -86,7 +94,7 @@ public class EnemyMovement : MonoBehaviour
         playerDirection.y = 0;
         playerDirection = playerDirection.normalized;
 
-        transform.position += playerDirection * speed * Time.deltaTime  /2;
+        transform.position += playerDirection * speed * Time.deltaTime  ;
 
         aggroCounter += Time.deltaTime;
         if (aggroCounter >= aggroTime)
