@@ -10,26 +10,40 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpHeight;
     [SerializeField] private InputActionReference jump;
     [SerializeField] private InputActionReference dash;
+    [SerializeField] private InputActionReference attack;
     [SerializeField] public float gravity;
+    [SerializeField] public LayerMask RayCastLayer;
     Vector2 movement = new Vector2();
     public Rigidbody2D rigidBody;
     bool isGrounded;
     [SerializeField] public float maxDashTime;
     [SerializeField] public float dashSpeed;
-    public float dashStoppingSpeed = 0.1f;
     private float currentDashTime;
     private float width;
     private float offset;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponentInChildren<Animator>();
+        spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
 
         width = GetComponentInChildren<BoxCollider2D>().bounds.size.x;
         offset = width / 2 * 1.1f;
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
+
+        if (TryGetComponent(out Health health))
+        {
+            health.Died += () =>
+            {
+                animator.SetTrigger("died");
+                this.enabled = false;
+            };
+        }
     }
 
     private void OnJump(InputAction.CallbackContext context)
@@ -44,7 +58,15 @@ public class PlayerMovement : MonoBehaviour
     private void OnDash(InputAction.CallbackContext context)
     {
         currentDashTime = 0.0f;
+        animator.SetTrigger("dashStart");
     }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        gameObject.TryGetComponent<UniversalAttack>(out UniversalAttack uniAttack);
+        uniAttack.DoAttack();
+    }
+
 
     private void Update()
     {
@@ -77,7 +99,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void GetPlayerMovement(InputAction.CallbackContext context)
     {
+        if (!this.enabled) return;
         movement.x = context.ReadValue<float>();
+        animator.SetBool("walking", movement.x != 0);
+        spriteRenderer.flipX = movement.x < 0;
     }
 
     public float RayCastX(Vector2 position, float xMovement)
@@ -86,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case > 0.0f:
                 Vector3 pos = new Vector3(position.x + offset, position.y, 0);
+                Debug.DrawRay(pos, Vector2.right * xMovement, Color.yellow);
                 RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.right, xMovement);
 
                 if (hit)
@@ -120,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
         if (yMovement < 0)
         {
             Vector3 pos = new Vector3(position.x, position.y - offset, 0);
-            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.down, -yMovement);
+            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.down, -yMovement, RayCastLayer);
 
             if (hit)
             {
