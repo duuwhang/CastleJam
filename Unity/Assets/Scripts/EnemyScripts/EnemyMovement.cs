@@ -1,5 +1,4 @@
 using System;
-using System.Numerics;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -41,7 +40,7 @@ public class EnemyMovement : MonoBehaviour
     {
 
         // --- Patrol Movement ---
-        if (huntState) 
+        if (huntState)
         {
             ChasePlayer();
             return;
@@ -53,11 +52,11 @@ public class EnemyMovement : MonoBehaviour
     void Patrol()
     {
         currentMoveDistance = currentMoveDistance + 1 * Time.deltaTime * multiplier;
-        UnityEngine.Vector2 position =  transform.position;
+        UnityEngine.Vector2 position = transform.position;
         position += moveVector * speed * direction * Time.deltaTime;
         transform.position = position;
-        
-        if (moveDistance <= currentMoveDistance) 
+
+        if (moveDistance <= currentMoveDistance)
         {
             direction = direction * negative;
             currentMoveDistance = 0;
@@ -76,12 +75,21 @@ public class EnemyMovement : MonoBehaviour
     }
     public void TurnAround()
     {
-        // --- Das für Wall Turning ---
         if (collided)
         {
             direction = direction * negative;
             currentMoveDistance = moveDistance - currentMoveDistance;
+
         }
+        if (direction <= 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        // --- Das für Wall Turning ---
     }
     public void ChasePlayer()
     {
@@ -94,7 +102,7 @@ public class EnemyMovement : MonoBehaviour
         playerDirection.y = 0;
         playerDirection = playerDirection.normalized;
 
-        transform.position += playerDirection * speed * Time.deltaTime  ;
+        transform.position += playerDirection * speed * Time.deltaTime;
 
         aggroCounter += Time.deltaTime;
         if (aggroCounter >= aggroTime)
@@ -106,8 +114,8 @@ public class EnemyMovement : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);            
+        Destroy(gameObject);
     }
 
-    
+
 }
