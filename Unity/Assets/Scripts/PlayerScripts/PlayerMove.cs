@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpHeight;
     [SerializeField] private InputActionReference jump;
     [SerializeField] private InputActionReference dash;
+    [SerializeField] private InputActionReference attack;
     [SerializeField] public float gravity;
     [SerializeField] public float distanceMod;
     Vector2 movement = new Vector2();
@@ -55,6 +56,14 @@ public class PlayerMovement : MonoBehaviour
     {
         currentDashTime = 0.0f;
     }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        gameObject.TryGetComponent<UniversalAttack>(out UniversalAttack uniAttack);
+        uniAttack.DoAttack();
+    }
+
+
     private void Update()
     {
         movement.y -= gravity * Time.deltaTime;
