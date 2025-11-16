@@ -1,33 +1,44 @@
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PauseSystem : MonoBehaviour
 {
-    // Variables
-    [SerializeField] private InputActionReference pause;
-    [SerializeField] public int useless;
-
     [SerializeField] private GameObject pauseMenuUI;
-
-    // --- Subscription (Attach the event handler) ---
-    private void Awake()
+    [SerializeField] private InputActionReference pause;
+    public void Start()
     {
-        // This is where you connect the 'OnPause' method to the 'performed' event
+        pauseMenuUI.SetActive(false);
+    }
+
+    private bool isPaused = false;
+
+    private void OnEnable()
+    {
         pause.action.performed += OnPause;
-        
-    }
-
-    // --- Unsubscription (Clean up the event handler) ---
-    private void OnDestroy()
-    {
-        // Always unsubscribe to prevent memory leaks and unexpected behavior
-    }
-
-    // --- Event Handler (The method that runs when the button is pressed) ---
-    public void OnPause(InputAction.CallbackContext context)
-    {
-        Time.timeScale = 0;
+        pause.action.Enable();
         pauseMenuUI.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        pause.action.performed -= OnPause;
+        pause.action.Disable();
+        pauseMenuUI.SetActive(false);
+    }
+
+    private void OnPause(InputAction.CallbackContext context)
+    {
+        if (!isPaused)
+        {
+            Time.timeScale = 0f;
+            isPaused = true;
+            Debug.Log("PAUSE triggered");
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isPaused = false;
+            Debug.Log("UNPAUSE triggered");
+        }
     }
 }
