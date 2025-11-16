@@ -14,8 +14,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement = new Vector2();
     public Rigidbody2D rigidBody;
     bool isGrounded;
-    public float maxDashTime = 1.0f;
-    [SerializeField] public float dashSpeed = 5.0f;
+    [SerializeField] public float maxDashTime;
+    [SerializeField] public float dashSpeed;
     public float dashStoppingSpeed = 0.1f;
     private float currentDashTime;
     private float width;
@@ -45,17 +45,25 @@ public class PlayerMovement : MonoBehaviour
     {
         currentDashTime = 0.0f;
     }
+
     private void Update()
     {
-
-        movement.y -= gravity;
+        movement.y -= gravity * Time.deltaTime;
 
         Vector2 position = transform.position;
         float xMovement = movement.x * Time.deltaTime * speed;
         if (currentDashTime < maxDashTime)
         {
-            xMovement *= dashSpeed;
-            currentDashTime += dashStoppingSpeed;
+            float dashDistance = dashSpeed * Time.deltaTime;
+            if (xMovement > 0)
+            {
+                xMovement += dashDistance;
+            }
+            else if (xMovement < 0)
+            {
+                xMovement -= dashDistance;
+            }
+            currentDashTime += dashDistance;
         }
         xMovement = RayCastX(position, xMovement);
         position.x += xMovement;
