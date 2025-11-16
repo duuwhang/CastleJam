@@ -3,17 +3,17 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[RequireComponent(typeof(PlayerMovement))]
-public class PlayerAttack : MonoBehaviour
+[RequireComponent(typeof(EnemyMovement))]
+public class EnemyAttack : MonoBehaviour
 {
     enum AttackState { READY, WINDUP, ATTACKING, COOLDOWN }
     private AttackState attackState;
 
-    private PlayerMovement playerMovement;
+    private EnemyMovement playerMovement;
 
-    [SerializeField] float windUpTime =  1;
-    [SerializeField] float attackDuration =  1; 
-    [SerializeField] float cooldownDuration  =  1;
+    [SerializeField] float windUpTime;
+    [SerializeField] float attackDuration; 
+    [SerializeField] float cooldownDuration;
 
     float currentattackDuration;
     float currentWindUpTime;
@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = GetComponent<EnemyMovement>();
     }
 
     void Update()
@@ -73,11 +73,11 @@ public class PlayerAttack : MonoBehaviour
         currentattackDuration = 0;
     }
 
-    public void DoDamage(GameObject Enemy)
+    public void DoDamage(GameObject Player)
     {
         Debug.Log("Damage");
 
-        Enemy.TryGetComponent<Health>(out Health healthValue);
+        Player.TryGetComponent<Health>(out Health healthValue);
         healthValue.Damage(1);
     }
 
