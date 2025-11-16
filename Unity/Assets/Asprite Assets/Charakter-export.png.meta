@@ -264,7 +264,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 142
+=======
+  spritePixelsToUnits: 100
+>>>>>>> art
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -288,7 +292,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> art
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -313,6 +321,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-basic-1
       rect:
         serializedVersion: 2
@@ -322,6 +331,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -335,6 +355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-basic-2
       rect:
         serializedVersion: 2
@@ -344,6 +365,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2239
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +392,21 @@ TextureImporter:
       name: Charakter-export_2
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1755
         y: 2239
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 499
+        y: 2239
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,12 +423,21 @@ TextureImporter:
       name: Charakter-export_3
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 498
         y: 2238
         width: 124
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 659
+        y: 2239
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,12 +454,21 @@ TextureImporter:
       name: Charakter-export_4
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 658
         y: 2238
         width: 124
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1759
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,12 +485,21 @@ TextureImporter:
       name: Charakter-export_5
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1918
         y: 2238
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1919
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,12 +516,21 @@ TextureImporter:
       name: Charakter-export_6
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2078
         y: 2238
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2079
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -470,12 +547,21 @@ TextureImporter:
       name: Charakter-export_7
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2238
         y: 2238
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2239
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,12 +578,21 @@ TextureImporter:
       name: Charakter-export_8
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2398
         y: 2238
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2399
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -511,6 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-dash-1
       rect:
         serializedVersion: 2
@@ -520,6 +616,17 @@ TextureImporter:
         height: 184
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1919
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -533,6 +640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-walk-1
       rect:
         serializedVersion: 2
@@ -542,6 +650,17 @@ TextureImporter:
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -555,6 +674,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-dash-2
       rect:
         serializedVersion: 2
@@ -564,6 +684,17 @@ TextureImporter:
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -577,6 +708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-walk-2
       rect:
         serializedVersion: 2
@@ -586,6 +718,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_12
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,12 +745,21 @@ TextureImporter:
       name: Charakter-export_13
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 488
         y: 1918
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 799
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -624,12 +776,21 @@ TextureImporter:
       name: Charakter-export_14
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 638
         y: 1918
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 959
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -643,6 +804,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-1
       rect:
         serializedVersion: 2
@@ -652,6 +814,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_15
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -668,12 +841,21 @@ TextureImporter:
       name: Charakter-export_16
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 798
         y: 1918
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1939
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -687,6 +869,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-2
       rect:
         serializedVersion: 2
@@ -696,6 +879,17 @@ TextureImporter:
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_17
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1919
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -712,12 +906,21 @@ TextureImporter:
       name: Charakter-export_18
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 958
         y: 1918
         width: 144
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2259
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -731,6 +934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-3
       rect:
         serializedVersion: 2
@@ -740,6 +944,17 @@ TextureImporter:
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_19
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -753,6 +968,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-4
       rect:
         serializedVersion: 2
@@ -762,6 +978,17 @@ TextureImporter:
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1599
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -775,6 +1002,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-5
       rect:
         serializedVersion: 2
@@ -784,6 +1012,17 @@ TextureImporter:
         height: 164
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1599
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -797,6 +1036,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-6
       rect:
         serializedVersion: 2
@@ -806,6 +1046,17 @@ TextureImporter:
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1599
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -819,6 +1070,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-7
       rect:
         serializedVersion: 2
@@ -828,6 +1080,17 @@ TextureImporter:
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_23
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1599
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -841,6 +1104,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-idle-1
       rect:
         serializedVersion: 2
@@ -850,6 +1114,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_24
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1599
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -863,6 +1138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-8
       rect:
         serializedVersion: 2
@@ -872,6 +1148,17 @@ TextureImporter:
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_25
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1599
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -885,6 +1172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-idle-2
       rect:
         serializedVersion: 2
@@ -894,6 +1182,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_26
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1599
+        width: 142
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -907,6 +1206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-9
       rect:
         serializedVersion: 2
@@ -916,6 +1216,17 @@ TextureImporter:
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_27
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1659
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -929,6 +1240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-idle-3
       rect:
         serializedVersion: 2
@@ -938,6 +1250,17 @@ TextureImporter:
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_28
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1639
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -951,6 +1274,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-death-10
       rect:
         serializedVersion: 2
@@ -960,6 +1284,17 @@ TextureImporter:
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_29
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1619
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -973,6 +1308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-idle-4
       rect:
         serializedVersion: 2
@@ -982,6 +1318,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_30
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 1599
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -995,6 +1342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<< HEAD
       name: Charakter-idle-5
       rect:
         serializedVersion: 2
@@ -1004,6 +1352,17 @@ TextureImporter:
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+      name: Charakter-export_31
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1579
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1020,12 +1379,21 @@ TextureImporter:
       name: Charakter-export_32
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 1278
         width: 232
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 9
+        y: 1279
+        width: 222
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1042,12 +1410,21 @@ TextureImporter:
       name: Charakter-export_33
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 328
         y: 1278
         width: 234
         height: 214
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 329
+        y: 1279
+        width: 232
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1064,12 +1441,21 @@ TextureImporter:
       name: Charakter-export_34
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 648
         y: 1278
         width: 224
         height: 214
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 649
+        y: 1279
+        width: 222
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1086,12 +1472,21 @@ TextureImporter:
       name: Charakter-export_35
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 968
         y: 1278
         width: 314
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 969
+        y: 1279
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1108,12 +1503,21 @@ TextureImporter:
       name: Charakter-export_36
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1288
         y: 1278
         width: 314
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1289
+        y: 1279
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1130,12 +1534,21 @@ TextureImporter:
       name: Charakter-export_37
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1608
         y: 1278
         width: 314
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1609
+        y: 1279
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1152,12 +1565,21 @@ TextureImporter:
       name: Charakter-export_38
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1928
         y: 1278
         width: 274
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1929
+        y: 1279
+        width: 272
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1174,12 +1596,21 @@ TextureImporter:
       name: Charakter-export_39
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2248
         y: 1278
         width: 312
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2249
+        y: 1279
+        width: 311
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1196,12 +1627,21 @@ TextureImporter:
       name: Charakter-export_40
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 0
         y: 958
         width: 232
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 9
+        y: 959
+        width: 222
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1218,12 +1658,21 @@ TextureImporter:
       name: Charakter-export_41
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 328
         y: 958
         width: 234
         height: 214
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 329
+        y: 959
+        width: 232
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1240,12 +1689,21 @@ TextureImporter:
       name: Charakter-export_42
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 648
         y: 958
         width: 224
         height: 214
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 649
+        y: 959
+        width: 222
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1262,12 +1720,21 @@ TextureImporter:
       name: Charakter-export_43
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 968
         y: 958
         width: 314
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 969
+        y: 959
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1284,12 +1751,21 @@ TextureImporter:
       name: Charakter-export_44
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1288
         y: 958
         width: 314
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1289
+        y: 959
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1306,12 +1782,21 @@ TextureImporter:
       name: Charakter-export_45
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1608
         y: 958
         width: 314
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1609
+        y: 959
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1328,12 +1813,21 @@ TextureImporter:
       name: Charakter-export_46
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1928
         y: 958
         width: 274
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1929
+        y: 959
+        width: 272
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1350,12 +1844,21 @@ TextureImporter:
       name: Charakter-export_47
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2248
         y: 958
         width: 312
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2249
+        y: 959
+        width: 311
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1372,12 +1875,21 @@ TextureImporter:
       name: Charakter-export_48
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8
         y: 638
         width: 154
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 9
+        y: 639
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1394,12 +1906,21 @@ TextureImporter:
       name: Charakter-export_49
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 168
         y: 638
         width: 154
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 169
+        y: 639
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1416,12 +1937,21 @@ TextureImporter:
       name: Charakter-export_50
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 488
         y: 638
         width: 154
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 489
+        y: 639
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1438,12 +1968,21 @@ TextureImporter:
       name: Charakter-export_51
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 648
         y: 638
         width: 154
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 649
+        y: 639
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1460,12 +1999,21 @@ TextureImporter:
       name: Charakter-export_52
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 968
         y: 638
         width: 154
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 969
+        y: 639
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1482,12 +2030,21 @@ TextureImporter:
       name: Charakter-export_53
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1128
         y: 638
         width: 154
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1129
+        y: 639
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1504,12 +2061,21 @@ TextureImporter:
       name: Charakter-export_54
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8
         y: 318
         width: 154
         height: 194
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 9
+        y: 319
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1526,12 +2092,21 @@ TextureImporter:
       name: Charakter-export_55
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 168
         y: 318
         width: 154
         height: 204
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 169
+        y: 319
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1548,12 +2123,21 @@ TextureImporter:
       name: Charakter-export_56
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1438
         y: 318
         width: 134
         height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1439
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1570,12 +2154,21 @@ TextureImporter:
       name: Charakter-export_57
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1598
         y: 318
         width: 134
         height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1599
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1592,12 +2185,21 @@ TextureImporter:
       name: Charakter-export_58
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1758
         y: 318
         width: 134
         height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1759
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1614,12 +2216,21 @@ TextureImporter:
       name: Charakter-export_59
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1918
         y: 318
         width: 134
         height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1919
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1636,12 +2247,21 @@ TextureImporter:
       name: Charakter-export_60
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2078
         y: 318
         width: 154
         height: 144
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2079
+        y: 319
+        width: 152
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1658,12 +2278,21 @@ TextureImporter:
       name: Charakter-export_61
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2258
         y: 318
         width: 144
         height: 134
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2259
+        y: 319
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1680,12 +2309,21 @@ TextureImporter:
       name: Charakter-export_62
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2458
         y: 308
         width: 54
         height: 174
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2459
+        y: 309
+        width: 52
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1702,12 +2340,21 @@ TextureImporter:
       name: Charakter-export_63
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 8
         y: 0
         width: 144
         height: 162
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 9
+        y: 0
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1724,12 +2371,21 @@ TextureImporter:
       name: Charakter-export_64
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 168
         y: 0
         width: 144
         height: 162
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 169
+        y: 0
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1746,12 +2402,21 @@ TextureImporter:
       name: Charakter-export_65
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 478
         y: 0
         width: 174
         height: 162
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 479
+        y: 0
+        width: 172
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1768,12 +2433,21 @@ TextureImporter:
       name: Charakter-export_66
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 648
         y: 0
         width: 304
         height: 162
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 649
+        y: 0
+        width: 302
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1790,12 +2464,21 @@ TextureImporter:
       name: Charakter-export_67
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 968
         y: 0
         width: 144
         height: 162
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 969
+        y: 0
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1812,12 +2495,21 @@ TextureImporter:
       name: Charakter-export_68
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1118
         y: 0
         width: 484
         height: 162
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1119
+        y: 0
+        width: 482
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1834,12 +2526,21 @@ TextureImporter:
       name: Charakter-export_69
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1618
         y: 0
         width: 254
         height: 202
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1619
+        y: 0
+        width: 252
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1856,12 +2557,21 @@ TextureImporter:
       name: Charakter-export_70
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 1938
         y: 0
         width: 284
         height: 202
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 1939
+        y: 0
+        width: 282
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1878,12 +2588,21 @@ TextureImporter:
       name: Charakter-export_71
       rect:
         serializedVersion: 2
+<<<<<<< HEAD
         x: 2258
         y: 0
         width: 294
         height: 202
       alignment: 7
       pivot: {x: 0.5, y: 0}
+=======
+        x: 2259
+        y: 0
+        width: 292
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+>>>>>>> art
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1900,7 +2619,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 90f8c6e37de7e75b39f78676717c6074
+=======
+    spriteID: 
+>>>>>>> art
     internalID: 0
     vertices: []
     indices: 
@@ -1908,6 +2631,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
+<<<<<<< HEAD
       entries:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
@@ -1932,6 +2656,36 @@ TextureImporter:
       Charakter-export_18: 3064746660436108853
       Charakter-export_2: -1103216782250819798
       Charakter-export_3: -1491569833433467044
+=======
+      entries: []
+    nameFileIdTable:
+      Charakter-export_0: 4309685694018366070
+      Charakter-export_1: 2533083992471696901
+      Charakter-export_10: -301141168591081068
+      Charakter-export_11: 1591119042161665324
+      Charakter-export_12: 7213823177470913709
+      Charakter-export_13: -5652764177606371773
+      Charakter-export_14: 9208900614676758251
+      Charakter-export_15: 6869298189736805866
+      Charakter-export_16: -2323680031646093928
+      Charakter-export_17: 7899407827168219098
+      Charakter-export_18: 3064746660436108853
+      Charakter-export_19: -5097894882691788518
+      Charakter-export_2: -1103216782250819798
+      Charakter-export_20: -1155815530535632465
+      Charakter-export_21: -7701436070519773969
+      Charakter-export_22: 3305911152513936061
+      Charakter-export_23: 4986958189740061471
+      Charakter-export_24: -6174764668887211559
+      Charakter-export_25: 31333372358335386
+      Charakter-export_26: 7974947430463492924
+      Charakter-export_27: 9030010026663121580
+      Charakter-export_28: 6001864473520829771
+      Charakter-export_29: 9125944660347400221
+      Charakter-export_3: -1491569833433467044
+      Charakter-export_30: 2487640578249017108
+      Charakter-export_31: -7907022881242036373
+>>>>>>> art
       Charakter-export_32: 2015637384618443784
       Charakter-export_33: -3841085206777180351
       Charakter-export_34: -8887603532460410308
@@ -1977,6 +2731,7 @@ TextureImporter:
       Charakter-export_70: 2405944140234605668
       Charakter-export_71: -4714378816505682035
       Charakter-export_8: -8172159113422935831
+<<<<<<< HEAD
       Charakter-idle-1: -6174764668887211559
       Charakter-idle-2: 7974947430463492924
       Charakter-idle-3: 6001864473520829771
@@ -1984,6 +2739,9 @@ TextureImporter:
       Charakter-idle-5: -7907022881242036373
       Charakter-walk-1: -301141168591081068
       Charakter-walk-2: 7213823177470913709
+=======
+      Charakter-export_9: -4702228590131240379
+>>>>>>> art
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
