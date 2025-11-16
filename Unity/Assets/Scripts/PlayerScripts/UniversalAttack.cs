@@ -19,7 +19,7 @@ public class UniversalAttack : MonoBehaviour
     float currentWindUpTime;
     float currentCooldownTime;
 
-    public GameObject AttackArea;
+    // public GameObject AttackArea;
 
     void Start()
     {
@@ -48,7 +48,7 @@ public class UniversalAttack : MonoBehaviour
     private void EndAttack()
     {
         attackState = AttackState.COOLDOWN;
-        AttackArea.SetActive(false);
+        //AttackArea.SetActive(false);
 
         playerMovement.enabled = true;
     }
@@ -67,16 +67,12 @@ public class UniversalAttack : MonoBehaviour
     {
         attackState = AttackState.ATTACKING;
 
-        Debug.Log("Attack wird ausgeführt");
-
-        AttackArea.SetActive(true);
+        //AttackArea.SetActive(true);
         currentattackDuration = 0;
     }
 
     public void DoDamage(GameObject Player)
     {
-        Debug.Log("Damage");
-
         Player.TryGetComponent<Health>(out Health healthValue);
         healthValue.Damage(1);
     }

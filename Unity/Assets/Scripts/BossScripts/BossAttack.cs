@@ -11,22 +11,25 @@ public class BossAttack : MonoBehaviour
     private AttackTM attackTM;
     private AttackState attackState;
 
-    private EnemyMovement playerMovement;
+    private EnemyMovement enemyMovement;
 
     [Header("Dive")]
-    [SerializeField] float diveWindUpTime;
-    [SerializeField] float diveAttackDuration; 
-    [SerializeField] float diveCooldownDuration;
+    [SerializeField] float diveWindUpTime = 1;
+    [SerializeField] float diveAttackDuration = 1; 
+    [SerializeField] float diveCooldownDuration = 1;
 
     [Header("Ram")]
-    [SerializeField] float ramWindUpTime;
-    [SerializeField] float ramAttackDuration; 
-    [SerializeField] float ramCooldownDuration;
+    [SerializeField] float ramWindUpTime = 1;
+    [SerializeField] float ramAttackDuration = 1; 
+    [SerializeField] float ramCooldownDuration = 1;
 
     [Header("Poison")]
-    [SerializeField] float poisonWindUpTime;
-    [SerializeField] float poisonAttackDuration; 
-    [SerializeField] float poisonCooldownDuration;
+    [SerializeField] float poisonWindUpTime = 1;
+    [SerializeField] float poisonAttackDuration = 1; 
+    [SerializeField] float poisonCooldownDuration = 1;
+
+    [Header("Scripts")]
+    
 
     float windUpTime;
     float attackDuration;
@@ -35,11 +38,17 @@ public class BossAttack : MonoBehaviour
     float currentattackDuration;
     float currentWindUpTime;
     float currentCooldownTime;
-    public GameObject AttackArea;
+    //public GameObject AttackArea;
 
     void Start()
     {
-        playerMovement = GetComponent<EnemyMovement>();
+        Attack();
+    }
+
+    
+    void Awake()
+    {
+        enemyMovement = GetComponent<EnemyMovement>();
     }
 
     void Update()
@@ -47,13 +56,7 @@ public class BossAttack : MonoBehaviour
         switch (attackState)
         {
             case AttackState.DECISION:
-                int randomNumber = UnityEngine.Random.Range(0, 100);
-                var attackMove = randomNumber switch
-                {
-                    <= 30 => attackTM = AttackTM.DIVE,
-                    <= 60 => attackTM = AttackTM.RAM,
-                    _ => attackTM = AttackTM.DIVE
-                };
+                DecideOnAttack();
                 SetTimeValues();
                 break;
             case AttackState.WINDUP:
@@ -74,37 +77,59 @@ public class BossAttack : MonoBehaviour
     private void EndAttack()
     {
         attackState = AttackState.COOLDOWN;
-        AttackArea.SetActive(false);
-
-        playerMovement.enabled = true;
+        //AttackArea.SetActive(false);
+        Attack();
+        enemyMovement.enabled = true;
+        attackState = AttackState.DECISION;
     }
 
     public void Attack()
     {
-        if (attackState != AttackState.READY) return;
-
+        //if (attackState != AttackState.READY) return;
         attackState = AttackState.WINDUP;
-        currentWindUpTime = 0;
-
-        playerMovement.enabled = false;
+            currentWindUpTime = 0;
+            
+        enemyMovement.enabled = false;
     }
 
     public void DoAttack()
     {
         attackState = AttackState.ATTACKING;
+        // --- Das is für die eine Attacke ---
+        //AttackArea.SetActive(true);
 
-        Debug.Log("Attack wird ausgeführt");
-
-        AttackArea.SetActive(true);
+        // --- Wir machen einen switch und es werden die verschiedenen Attack Funktionen ausgeführt ---
+        switch  (attackTM)
+        {
+            case AttackTM.DIVE:
+                DoDiveAttack();
+                break;
+            case AttackTM.RAM:
+                DoRamAttack();
+                break;
+            case AttackTM.POISON:
+                DoPoisonAttack();
+                break;
+        }
         currentattackDuration = 0;
     }
 
     public void DoDamage(GameObject Player)
     {
-        Debug.Log("Damage");
 
         Player.TryGetComponent<Health>(out Health healthValue);
         healthValue.Damage(1);
+    }
+    public void DecideOnAttack()
+    {
+        int randomNumber = UnityEngine.Random.Range(0, 100);
+        var attackMove = randomNumber switch
+        {
+            <= 30 => attackTM = AttackTM.DIVE,
+            <= 60 => attackTM = AttackTM.RAM,
+            _   => attackTM = AttackTM.DIVE
+        };
+        Debug.Log(attackMove);
     }
     public void SetTimeValues()
     {
@@ -126,5 +151,19 @@ public class BossAttack : MonoBehaviour
                 currentCooldownTime = poisonCooldownDuration;
                 break;
         }
+        attackState = AttackState.WINDUP;
+    }
+
+    public void DoDiveAttack()
+    {
+        Debug.Log("Dive Attack");
+    }
+    public void DoRamAttack()
+    {
+        Debug.Log("Ram Attack");
+    }
+    public void DoPoisonAttack()
+    {
+        Debug.Log("Poison Attack");
     }
 }

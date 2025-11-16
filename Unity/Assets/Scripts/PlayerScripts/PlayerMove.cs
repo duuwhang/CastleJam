@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         jump.action.performed += OnJump;
         dash.action.performed += OnDash;
+        attack.action.performed += OnAttack;
 
         if (TryGetComponent(out Health health))
         {
@@ -60,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnAttack(InputAction.CallbackContext context)
     {
-        gameObject.TryGetComponent<UniversalAttack>(out UniversalAttack uniAttack);
+        this.gameObject.TryGetComponent<UniversalAttack>(out UniversalAttack uniAttack);
         uniAttack.DoAttack();
     }
 

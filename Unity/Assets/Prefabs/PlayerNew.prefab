@@ -354,8 +354,16 @@ MonoBehaviour:
   jumpHeight: 20
   jump: {fileID: -1274357349905945733, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dash: {fileID: 3142992586761556817, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  attack: {fileID: -5021914099581529925, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   gravity: 3
-  rigidBody: {fileID: 0}
+  distanceMod: 0
+  IgnoreRayCast:
+    serializedVersion: 2
+    m_Bits: 128
+  floatHeight: 0
+  liftForce: 0
+  damping: 0
+  rigidBody: {fileID: 5014423035265291197}
   maxDashTime: 5
   dashSpeed: 50
   dashStoppingSpeed: 0.1
@@ -433,7 +441,19 @@ MonoBehaviour:
     m_ActionId: d80ea19d-5e6c-423b-83e4-322f51a8f6e3
     m_ActionName: 'PlayerInput/Dash[/Keyboard/shift]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4530551528087030194}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 1b444cbb-26e7-4bfc-bd43-7f32f8ac8660
     m_ActionName: 'PlayerInput/Attack[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -453,5 +473,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6013d1e598e54174992f0ff5600a169b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  MaxHealth: 100
-  CurrentHealth: 100
+  MaxHealth: 3
+  CurrentHealth: 3

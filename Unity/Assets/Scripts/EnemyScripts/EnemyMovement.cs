@@ -38,7 +38,6 @@ public class EnemyMovement : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(direction);
         // --- Patrol Movement ---
         if (huntState)
         {
