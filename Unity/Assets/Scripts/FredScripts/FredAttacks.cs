@@ -2,12 +2,14 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using System.Collections;
+
 
 [RequireComponent(typeof(FredMovement))]
 public class FredAttacks : MonoBehaviour
 {
     enum AttackState { READY, DECISION, WINDUP, ATTACKING, COOLDOWN }
-    enum AttackTM { POISON, DIVE, RAM}
+    enum AttackTM { POISON, DIVE, RAM }
     private AttackTM attackTM;
     private AttackState attackState;
 
@@ -15,26 +17,26 @@ public class FredAttacks : MonoBehaviour
 
     [Header("Dive Settings")]
     [SerializeField] float diveSpeed = 10f;
-    [SerializeField] float groundY = -2f; // where the dive should end
+    [SerializeField] float groundY = -2f;
     [SerializeField] GameObject diveHitbox; // assign in Inspector
 
     [Header("Dive")]
     [SerializeField] float diveWindUpTime = 1;
-    [SerializeField] float diveAttackDuration = 1; 
+    [SerializeField] float diveAttackDuration = 1;
     [SerializeField] float diveCooldownDuration = 1;
 
     [Header("Ram")]
     [SerializeField] float ramWindUpTime = 1;
-    [SerializeField] float ramAttackDuration = 1; 
+    [SerializeField] float ramAttackDuration = 1;
     [SerializeField] float ramCooldownDuration = 1;
 
     [Header("Poison")]
     [SerializeField] float poisonWindUpTime = 1;
-    [SerializeField] float poisonAttackDuration = 1; 
+    [SerializeField] float poisonAttackDuration = 1;
     [SerializeField] float poisonCooldownDuration = 1;
 
     [Header("Scripts")]
-    
+
 
     float windUpTime;
     float attackDuration;
@@ -50,7 +52,7 @@ public class FredAttacks : MonoBehaviour
         Attack();
     }
 
-    
+
     void Awake()
     {
         FredMovement = GetComponent<FredMovement>();
@@ -74,7 +76,7 @@ public class FredAttacks : MonoBehaviour
                 break;
             case AttackState.COOLDOWN:
                 currentCooldownTime += Time.deltaTime;
-                if(currentCooldownTime >= cooldownDuration) attackState = AttackState.READY;
+                if (currentCooldownTime >= cooldownDuration) attackState = AttackState.READY;
                 break;
         }
     }
@@ -92,8 +94,8 @@ public class FredAttacks : MonoBehaviour
     {
         //if (attackState != AttackState.READY) return;
         attackState = AttackState.WINDUP;
-            currentWindUpTime = 0;
-            
+        currentWindUpTime = 0;
+
         FredMovement.enabled = false;
     }
 
@@ -104,7 +106,7 @@ public class FredAttacks : MonoBehaviour
         //AttackArea.SetActive(true);
 
         // --- Wir machen einen switch und es werden die verschiedenen Attack Funktionen ausgeführt ---
-        switch  (attackTM)
+        switch (attackTM)
         {
             case AttackTM.DIVE:
                 DoDiveAttack();
@@ -132,7 +134,7 @@ public class FredAttacks : MonoBehaviour
         {
             <= 30 => attackTM = AttackTM.DIVE,
             <= 60 => attackTM = AttackTM.RAM,
-            _   => attackTM = AttackTM.DIVE
+            _ => attackTM = AttackTM.DIVE
         };
         //Debug.Log(attackMove);
     }
@@ -141,23 +143,31 @@ public class FredAttacks : MonoBehaviour
         switch (attackTM)
         {
             case AttackTM.DIVE:
-                currentattackDuration = diveAttackDuration;
-                currentWindUpTime = diveWindUpTime;
-                currentCooldownTime = diveCooldownDuration;
+                attackDuration = diveAttackDuration;
+                windUpTime = diveWindUpTime;
+                cooldownDuration = diveCooldownDuration;
                 break;
+
             case AttackTM.RAM:
-                currentattackDuration = ramAttackDuration;
-                currentWindUpTime = ramWindUpTime;
-                currentCooldownTime = ramCooldownDuration;
+                attackDuration = ramAttackDuration;
+                windUpTime = ramWindUpTime;
+                cooldownDuration = ramCooldownDuration;
                 break;
+
             case AttackTM.POISON:
-                currentattackDuration = poisonAttackDuration;
-                currentWindUpTime = poisonWindUpTime;
-                currentCooldownTime = poisonCooldownDuration;
+                attackDuration = poisonAttackDuration;
+                windUpTime = poisonWindUpTime;
+                cooldownDuration = poisonCooldownDuration;
                 break;
         }
+
+        currentattackDuration = 0;
+        currentWindUpTime = 0;
+        currentCooldownTime = 0;
+
         attackState = AttackState.WINDUP;
     }
+
 
     public void DoDiveAttack()
     {
@@ -165,7 +175,35 @@ public class FredAttacks : MonoBehaviour
         // We need to be moving downwoards toward the ground in a sort of dash
         // we need a damage Area in front of us just slightly
         // We need to stay on the ground for a variable cooldown so only allow movement once the Cooldown has run out
+        Debug.Log("Dive Attack started");
+        diveHitbox.SetActive(true);   // enable damage area
+        StartCoroutine(DiveRoutine());
     }
+
+private IEnumerator DiveRoutine()
+{
+    while (transform.position.y > groundY)
+    {
+        float newY = transform.position.y - diveSpeed * Time.deltaTime;
+        transform.position = new Vector3(
+            transform.position.x,
+            Mathf.Max(newY, groundY),  // clamp safety
+            transform.position.z
+        );
+        yield return null;
+    }
+
+    // Clamp exactly
+    transform.position = new Vector3(transform.position.x, groundY, transform.position.z);
+
+    diveHitbox.SetActive(false);
+
+    attackState = AttackState.ATTACKING;
+    currentattackDuration = 0;
+}
+
+
+
     public void DoRamAttack()
     {
         Debug.Log("Ram Attack");
