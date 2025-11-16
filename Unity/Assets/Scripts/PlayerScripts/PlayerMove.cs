@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputActionReference attack;
     [SerializeField] public float gravity;
     [SerializeField] public float distanceMod;
+    [SerializeField] public LayerMask IgnoreRayCast;
     Vector2 movement = new Vector2();
     public float floatHeight;     // Desired floating height.
     public float liftForce;       // Force to apply when lifting the rigidbody.
@@ -138,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
         if (yMovement < 0)
         {
             Vector3 pos = new Vector3(position.x, position.y - offset, 0);
-            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.down, -yMovement);
+            RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.down, -yMovement, IgnoreRayCast);
 
             if (hit)
             {
