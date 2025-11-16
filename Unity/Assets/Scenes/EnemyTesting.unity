@@ -166,6 +166,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4086772524070017070, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2041434045}
+    - target: {fileID: 4086772524070017070, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086772524070017070, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UniversalAttack, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5841574393521905276, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.48
@@ -206,10 +218,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6456064095186702725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456064095186702725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2041434045}
+    - target: {fileID: 6456064095186702725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DoDamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456064095186702725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UniversalAttack, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456064095186702725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1285140074}
+    - target: {fileID: 6456064095186702725, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      propertyPath: OnPlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 281242696621300596, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2041434045}
   m_SourcePrefab: {fileID: 100100000, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
 --- !u!1 &274480697
 GameObject:
@@ -348,6 +387,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &768557071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8882627931502047625, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+  m_PrefabInstance: {fileID: 174024343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1285140074 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7844928440637743598, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
+  m_PrefabInstance: {fileID: 2147262131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384907137
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +808,27 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &2041434039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 281242696621300596, guid: a3fc8a3a50a622949af6aa325cc9a17d, type: 3}
+  m_PrefabInstance: {fileID: 174024343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2041434045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041434039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb7ae1f49455de42af2e360b55be511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UniversalAttack
+  windUpTime: 1
+  attackDuration: 3
+  cooldownDuration: 5
+  AttackArea: {fileID: 768557071}
 --- !u!1001 &2147262131
 PrefabInstance:
   m_ObjectHideFlags: 0

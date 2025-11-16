@@ -38,8 +38,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (TryGetComponent(out Health health))
         {
-            animator.SetTrigger("died");
-            health.Died += () => this.enabled = false;
+            health.Died += () =>
+            {
+                animator.SetTrigger("died");
+                this.enabled = false;
+            };
         }
     }
 
@@ -96,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void GetPlayerMovement(InputAction.CallbackContext context)
     {
+        if (!this.enabled) return;
         movement.x = context.ReadValue<float>();
         animator.SetBool("walking", movement.x != 0);
         spriteRenderer.flipX = movement.x < 0;
