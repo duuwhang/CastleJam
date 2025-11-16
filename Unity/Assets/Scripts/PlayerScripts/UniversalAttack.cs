@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(EnemyMovement))]
-public class EnemyAttack : MonoBehaviour
+public class UniversalAttack : MonoBehaviour
 {
     enum AttackState { READY, WINDUP, ATTACKING, COOLDOWN }
     private AttackState attackState;

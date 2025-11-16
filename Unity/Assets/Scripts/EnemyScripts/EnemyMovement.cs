@@ -81,13 +81,13 @@ public class EnemyMovement : MonoBehaviour
             currentMoveDistance = moveDistance - currentMoveDistance;
 
         }
-        if (direction <= 0)
+        if (direction == 1)
+        {
+            transform.rotation = Quaternion.Euler(0, -180, 0);
+        }
+        if (direction == 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         // --- Das für Wall Turning ---
     }
