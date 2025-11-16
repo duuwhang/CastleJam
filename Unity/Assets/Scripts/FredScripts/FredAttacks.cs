@@ -3,15 +3,20 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[RequireComponent(typeof(EnemyMovement))]
-public class BossAttack : MonoBehaviour
+[RequireComponent(typeof(FredMovement))]
+public class FredAttacks : MonoBehaviour
 {
     enum AttackState { READY, DECISION, WINDUP, ATTACKING, COOLDOWN }
     enum AttackTM { POISON, DIVE, RAM}
     private AttackTM attackTM;
     private AttackState attackState;
 
-    private EnemyMovement enemyMovement;
+    private FredMovement FredMovement;
+
+    [Header("Dive Settings")]
+    [SerializeField] float diveSpeed = 10f;
+    [SerializeField] float groundY = -2f; // where the dive should end
+    [SerializeField] GameObject diveHitbox; // assign in Inspector
 
     [Header("Dive")]
     [SerializeField] float diveWindUpTime = 1;
@@ -48,7 +53,7 @@ public class BossAttack : MonoBehaviour
     
     void Awake()
     {
-        enemyMovement = GetComponent<EnemyMovement>();
+        FredMovement = GetComponent<FredMovement>();
     }
 
     void Update()
@@ -79,7 +84,7 @@ public class BossAttack : MonoBehaviour
         attackState = AttackState.COOLDOWN;
         //AttackArea.SetActive(false);
         Attack();
-        enemyMovement.enabled = true;
+        FredMovement.enabled = true;
         attackState = AttackState.DECISION;
     }
 
@@ -89,7 +94,7 @@ public class BossAttack : MonoBehaviour
         attackState = AttackState.WINDUP;
             currentWindUpTime = 0;
             
-        enemyMovement.enabled = false;
+        FredMovement.enabled = false;
     }
 
     public void DoAttack()
@@ -129,7 +134,7 @@ public class BossAttack : MonoBehaviour
             <= 60 => attackTM = AttackTM.RAM,
             _   => attackTM = AttackTM.DIVE
         };
-        Debug.Log(attackMove);
+        //Debug.Log(attackMove);
     }
     public void SetTimeValues()
     {
@@ -157,6 +162,9 @@ public class BossAttack : MonoBehaviour
     public void DoDiveAttack()
     {
         Debug.Log("Dive Attack");
+        // We need to be moving downwoards toward the ground in a sort of dash
+        // we need a damage Area in front of us just slightly
+        // We need to stay on the ground for a variable cooldown so only allow movement once the Cooldown has run out
     }
     public void DoRamAttack()
     {
