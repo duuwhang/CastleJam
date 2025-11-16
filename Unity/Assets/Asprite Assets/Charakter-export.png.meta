@@ -1,0 +1,1989 @@
+fileFormatVersion: 2
+guid: 67bb417a2e1114cbb84dc9692abf8a80
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4309685694018366070
+    second: Charakter-export_0
+  - first:
+      213: 2533083992471696901
+    second: Charakter-export_1
+  - first:
+      213: -1103216782250819798
+    second: Charakter-export_2
+  - first:
+      213: -1491569833433467044
+    second: Charakter-export_3
+  - first:
+      213: 5997772193882345031
+    second: Charakter-export_4
+  - first:
+      213: -4397457675015576066
+    second: Charakter-export_5
+  - first:
+      213: 7678595368291255104
+    second: Charakter-export_6
+  - first:
+      213: 8944097033006388207
+    second: Charakter-export_7
+  - first:
+      213: -8172159113422935831
+    second: Charakter-export_8
+  - first:
+      213: -4702228590131240379
+    second: Charakter-export_9
+  - first:
+      213: -301141168591081068
+    second: Charakter-export_10
+  - first:
+      213: 1591119042161665324
+    second: Charakter-export_11
+  - first:
+      213: 7213823177470913709
+    second: Charakter-export_12
+  - first:
+      213: -5652764177606371773
+    second: Charakter-export_13
+  - first:
+      213: 9208900614676758251
+    second: Charakter-export_14
+  - first:
+      213: 6869298189736805866
+    second: Charakter-export_15
+  - first:
+      213: -2323680031646093928
+    second: Charakter-export_16
+  - first:
+      213: 7899407827168219098
+    second: Charakter-export_17
+  - first:
+      213: 3064746660436108853
+    second: Charakter-export_18
+  - first:
+      213: -5097894882691788518
+    second: Charakter-export_19
+  - first:
+      213: -1155815530535632465
+    second: Charakter-export_20
+  - first:
+      213: -7701436070519773969
+    second: Charakter-export_21
+  - first:
+      213: 3305911152513936061
+    second: Charakter-export_22
+  - first:
+      213: 4986958189740061471
+    second: Charakter-export_23
+  - first:
+      213: -6174764668887211559
+    second: Charakter-export_24
+  - first:
+      213: 31333372358335386
+    second: Charakter-export_25
+  - first:
+      213: 7974947430463492924
+    second: Charakter-export_26
+  - first:
+      213: 9030010026663121580
+    second: Charakter-export_27
+  - first:
+      213: 6001864473520829771
+    second: Charakter-export_28
+  - first:
+      213: 9125944660347400221
+    second: Charakter-export_29
+  - first:
+      213: 2487640578249017108
+    second: Charakter-export_30
+  - first:
+      213: -7907022881242036373
+    second: Charakter-export_31
+  - first:
+      213: 2015637384618443784
+    second: Charakter-export_32
+  - first:
+      213: -3841085206777180351
+    second: Charakter-export_33
+  - first:
+      213: -8887603532460410308
+    second: Charakter-export_34
+  - first:
+      213: -4573669714136618634
+    second: Charakter-export_35
+  - first:
+      213: -7431109473662551261
+    second: Charakter-export_36
+  - first:
+      213: 2004208533005836846
+    second: Charakter-export_37
+  - first:
+      213: -2624549124338685536
+    second: Charakter-export_38
+  - first:
+      213: -1320794272352470446
+    second: Charakter-export_39
+  - first:
+      213: 7802600824596300369
+    second: Charakter-export_40
+  - first:
+      213: 5861576960948992412
+    second: Charakter-export_41
+  - first:
+      213: -6442931187539950037
+    second: Charakter-export_42
+  - first:
+      213: -3740028702759615670
+    second: Charakter-export_43
+  - first:
+      213: -3980999298705898328
+    second: Charakter-export_44
+  - first:
+      213: 62962956210475527
+    second: Charakter-export_45
+  - first:
+      213: -2886008945505212405
+    second: Charakter-export_46
+  - first:
+      213: -8283049849737644010
+    second: Charakter-export_47
+  - first:
+      213: 4563301607778798626
+    second: Charakter-export_48
+  - first:
+      213: -4260745345213531860
+    second: Charakter-export_49
+  - first:
+      213: -1243665115810311097
+    second: Charakter-export_50
+  - first:
+      213: 2428951815527448403
+    second: Charakter-export_51
+  - first:
+      213: -6857439779060438153
+    second: Charakter-export_52
+  - first:
+      213: 6581307558628550888
+    second: Charakter-export_53
+  - first:
+      213: -4808841375949586589
+    second: Charakter-export_54
+  - first:
+      213: 3209137537814526081
+    second: Charakter-export_55
+  - first:
+      213: 2122786279080172963
+    second: Charakter-export_56
+  - first:
+      213: -8927870823788307605
+    second: Charakter-export_57
+  - first:
+      213: 5751537117508061588
+    second: Charakter-export_58
+  - first:
+      213: 6271108411841827364
+    second: Charakter-export_59
+  - first:
+      213: -6133216499740064091
+    second: Charakter-export_60
+  - first:
+      213: -4986707444387587857
+    second: Charakter-export_61
+  - first:
+      213: 1607298044887104049
+    second: Charakter-export_62
+  - first:
+      213: -2153145057359475392
+    second: Charakter-export_63
+  - first:
+      213: -5791389802140694390
+    second: Charakter-export_64
+  - first:
+      213: 633949381388957822
+    second: Charakter-export_65
+  - first:
+      213: 783872369960309478
+    second: Charakter-export_66
+  - first:
+      213: -6651021600563418285
+    second: Charakter-export_67
+  - first:
+      213: 4772659804092597341
+    second: Charakter-export_68
+  - first:
+      213: -5015032674615941844
+    second: Charakter-export_69
+  - first:
+      213: 2405944140234605668
+    second: Charakter-export_70
+  - first:
+      213: -4714378816505682035
+    second: Charakter-export_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Charakter-export_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a2c851e441fcb30800000000000000
+      internalID: 4309685694018366070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2239
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506f0856872572320800000000000000
+      internalID: 2533083992471696901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_2
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 2239
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fb0bf7e2690b0f0800000000000000
+      internalID: -1103216782250819798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 2239
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c577280a321ec4be0800000000000000
+      internalID: -1491569833433467044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_4
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e8214680e5c3350800000000000000
+      internalID: 5997772193882345031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_5
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5a1e51b8719f2c0800000000000000
+      internalID: -4397457675015576066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_6
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043c5f4fdc9df8a60800000000000000
+      internalID: 7678595368291255104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_7
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe398f81dd0df1c70800000000000000
+      internalID: 8944097033006388207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_8
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 2239
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e864749598a69e80800000000000000
+      internalID: -8172159113422935831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1919
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542aa80c2045ebeb0800000000000000
+      internalID: -4702228590131240379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491f1e2e3b122dbf0800000000000000
+      internalID: -301141168591081068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25e767b65ac41610800000000000000
+      internalID: 1591119042161665324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_12
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac22ad95f5ac1460800000000000000
+      internalID: 7213823177470913709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_13
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34618ba1ee85d81b0800000000000000
+      internalID: -5652764177606371773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_14
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1919
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee3fa571569ccf70800000000000000
+      internalID: 9208900614676758251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_15
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae50f77fe46a45f50800000000000000
+      internalID: 6869298189736805866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_16
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89de0169251a0cfd0800000000000000
+      internalID: -2323680031646093928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_17
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1919
+        width: 122
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf4d42e09550ad60800000000000000
+      internalID: 7899407827168219098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_18
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536ebd599da288a20800000000000000
+      internalID: 3064746660436108853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_19
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 1919
+        width: 122
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11dfde2d93a049b0800000000000000
+      internalID: -5097894882691788518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1599
+        width: 161
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa14b8416e7b5ffe0800000000000000
+      internalID: -1155815530535632465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1599
+        width: 162
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4e944a2b00f1590800000000000000
+      internalID: -7701436070519773969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1599
+        width: 142
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba68908da4f0ed20800000000000000
+      internalID: 3305911152513936061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_23
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1599
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f137e213d0c353540800000000000000
+      internalID: 4986958189740061471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_24
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1599
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1685bbf34de4aa0800000000000000
+      internalID: -6174764668887211559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_25
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1599
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b980149815f6000800000000000000
+      internalID: 31333372358335386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_26
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1599
+        width: 142
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33d0375f64bcae60800000000000000
+      internalID: 7974947430463492924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_27
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1659
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca29875b64a015d70800000000000000
+      internalID: 9030010026663121580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_28
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1639
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45fe3e70f7ea4350800000000000000
+      internalID: 6001864473520829771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_29
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 1619
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1031e7315ed5ae70800000000000000
+      internalID: 9125944660347400221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_30
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 1599
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41741630defd58220800000000000000
+      internalID: 2487640578249017108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_31
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1579
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67ceac259c944290800000000000000
+      internalID: -7907022881242036373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1279
+        width: 222
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8040e22a58bf8fb10800000000000000
+      internalID: 2015637384618443784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_33
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1279
+        width: 232
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fc90afa59b1bac0800000000000000
+      internalID: -3841085206777180351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_34
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1279
+        width: 222
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ab03ffca3e8a480800000000000000
+      internalID: -8887603532460410308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_35
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1279
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679ace890af0780c0800000000000000
+      internalID: -4573669714136618634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_36
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1279
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bbd4f2e456fd890800000000000000
+      internalID: -7431109473662551261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_37
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1279
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22ae91ca0160db10800000000000000
+      internalID: 2004208533005836846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_38
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 1279
+        width: 272
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9ea341a7ab39bd0800000000000000
+      internalID: -2624549124338685536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_39
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1279
+        width: 311
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a7f0f6b989bade0800000000000000
+      internalID: -1320794272352470446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 959
+        width: 222
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1528b3a2c18684c60800000000000000
+      internalID: 7802600824596300369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_41
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 959
+        width: 232
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c997af4a031885150800000000000000
+      internalID: 5861576960948992412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_42
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 959
+        width: 222
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b264566983c1696a0800000000000000
+      internalID: -6442931187539950037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_43
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 959
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a438f3ad5bfb81cc0800000000000000
+      internalID: -3740028702759615670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_44
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 959
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a44e85ea36a0c8c0800000000000000
+      internalID: -3980999298705898328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_45
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 959
+        width: 312
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7021fee9970bfd000800000000000000
+      internalID: 62962956210475527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_46
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 959
+        width: 272
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08ef80a726d2f7d0800000000000000
+      internalID: -2886008945505212405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_47
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 959
+        width: 311
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618f8811c02bc0d80800000000000000
+      internalID: -8283049849737644010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 639
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ccf9682aa145f30800000000000000
+      internalID: 4563301607778798626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_49
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 639
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29f524deaaced4c0800000000000000
+      internalID: -4260745345213531860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_50
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 639
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744d4989a2d9dbee0800000000000000
+      internalID: -1243665115810311097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_51
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 639
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fbd0d9ece55b120800000000000000
+      internalID: 2428951815527448403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_52
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 639
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b287c6ada75d0a0800000000000000
+      internalID: -6857439779060438153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_53
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 639
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8e5a5fa50855b50800000000000000
+      internalID: 6581307558628550888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_54
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 319
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ff2553f30934db0800000000000000
+      internalID: -4808841375949586589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_55
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 319
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1887ec08695298c20800000000000000
+      internalID: 3209137537814526081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_56
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad95a2bfd6a57d10800000000000000
+      internalID: 2122786279080172963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_57
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b1683a9c4d91480800000000000000
+      internalID: -8927870823788307605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_58
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499ca81198091df40800000000000000
+      internalID: 5751537117508061588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_59
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 319
+        width: 132
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422dbc3ffd3770750800000000000000
+      internalID: 6271108411841827364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_60
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 319
+        width: 152
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6cd62b61072eaa0800000000000000
+      internalID: -6133216499740064091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_61
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 319
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe85b720008abcab0800000000000000
+      internalID: -4986707444387587857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_62
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 309
+        width: 52
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13afca55e054e4610800000000000000
+      internalID: 1607298044887104049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_63
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d433a6afd7e12e0800000000000000
+      internalID: -2153145057359475392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_64
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a888597b8a9d0afa0800000000000000
+      internalID: -5791389802140694390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_65
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 172
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7874438a9d3cc800800000000000000
+      internalID: 633949381388957822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_66
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 302
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e25ab074cfd0ea00800000000000000
+      internalID: 783872369960309478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_67
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 0
+        width: 142
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ba7f8c713d2b3a0800000000000000
+      internalID: -6651021600563418285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_68
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 0
+        width: 482
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5489b02ec4eb3240800000000000000
+      internalID: 4772659804092597341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_69
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 0
+        width: 252
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c252a8c6a56076ab0800000000000000
+      internalID: -5015032674615941844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_70
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 0
+        width: 282
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464cd14c271a36120800000000000000
+      internalID: 2405944140234605668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Charakter-export_71
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 0
+        width: 292
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d876d89b179239eb0800000000000000
+      internalID: -4714378816505682035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Charakter-export_0: 4309685694018366070
+      Charakter-export_1: 2533083992471696901
+      Charakter-export_10: -301141168591081068
+      Charakter-export_11: 1591119042161665324
+      Charakter-export_12: 7213823177470913709
+      Charakter-export_13: -5652764177606371773
+      Charakter-export_14: 9208900614676758251
+      Charakter-export_15: 6869298189736805866
+      Charakter-export_16: -2323680031646093928
+      Charakter-export_17: 7899407827168219098
+      Charakter-export_18: 3064746660436108853
+      Charakter-export_19: -5097894882691788518
+      Charakter-export_2: -1103216782250819798
+      Charakter-export_20: -1155815530535632465
+      Charakter-export_21: -7701436070519773969
+      Charakter-export_22: 3305911152513936061
+      Charakter-export_23: 4986958189740061471
+      Charakter-export_24: -6174764668887211559
+      Charakter-export_25: 31333372358335386
+      Charakter-export_26: 7974947430463492924
+      Charakter-export_27: 9030010026663121580
+      Charakter-export_28: 6001864473520829771
+      Charakter-export_29: 9125944660347400221
+      Charakter-export_3: -1491569833433467044
+      Charakter-export_30: 2487640578249017108
+      Charakter-export_31: -7907022881242036373
+      Charakter-export_32: 2015637384618443784
+      Charakter-export_33: -3841085206777180351
+      Charakter-export_34: -8887603532460410308
+      Charakter-export_35: -4573669714136618634
+      Charakter-export_36: -7431109473662551261
+      Charakter-export_37: 2004208533005836846
+      Charakter-export_38: -2624549124338685536
+      Charakter-export_39: -1320794272352470446
+      Charakter-export_4: 5997772193882345031
+      Charakter-export_40: 7802600824596300369
+      Charakter-export_41: 5861576960948992412
+      Charakter-export_42: -6442931187539950037
+      Charakter-export_43: -3740028702759615670
+      Charakter-export_44: -3980999298705898328
+      Charakter-export_45: 62962956210475527
+      Charakter-export_46: -2886008945505212405
+      Charakter-export_47: -8283049849737644010
+      Charakter-export_48: 4563301607778798626
+      Charakter-export_49: -4260745345213531860
+      Charakter-export_5: -4397457675015576066
+      Charakter-export_50: -1243665115810311097
+      Charakter-export_51: 2428951815527448403
+      Charakter-export_52: -6857439779060438153
+      Charakter-export_53: 6581307558628550888
+      Charakter-export_54: -4808841375949586589
+      Charakter-export_55: 3209137537814526081
+      Charakter-export_56: 2122786279080172963
+      Charakter-export_57: -8927870823788307605
+      Charakter-export_58: 5751537117508061588
+      Charakter-export_59: 6271108411841827364
+      Charakter-export_6: 7678595368291255104
+      Charakter-export_60: -6133216499740064091
+      Charakter-export_61: -4986707444387587857
+      Charakter-export_62: 1607298044887104049
+      Charakter-export_63: -2153145057359475392
+      Charakter-export_64: -5791389802140694390
+      Charakter-export_65: 633949381388957822
+      Charakter-export_66: 783872369960309478
+      Charakter-export_67: -6651021600563418285
+      Charakter-export_68: 4772659804092597341
+      Charakter-export_69: -5015032674615941844
+      Charakter-export_7: 8944097033006388207
+      Charakter-export_70: 2405944140234605668
+      Charakter-export_71: -4714378816505682035
+      Charakter-export_8: -8172159113422935831
+      Charakter-export_9: -4702228590131240379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
