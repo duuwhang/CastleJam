@@ -171,7 +171,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3383888701327218186, guid: 997a7c54be592bf478d259c221c3ebc7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -223,10 +224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faf32e9ba60aab45856e0450dbe5899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  speed: 5
+  speed: 2
   moveDistance: 0
   huntState: 0
-  aggroTime: 1
+  aggroTime: 0
   AggroArea: {fileID: 1365950253}
   DamageArea: {fileID: 0}
   AttackRange: {fileID: 0}
@@ -264,7 +265,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.033042908, y: 0.04619789}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -274,7 +275,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4996643, y: 0.47335243}
   m_EdgeRadius: 0
 --- !u!1 &477003957
 GameObject:
@@ -2902,7 +2903,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.03, y: 0.05, z: 0}
-  m_LocalScale: {x: 1.9369, y: 1.9369, z: 1.9369}
+  m_LocalScale: {x: 1.54952, y: 1.5579939, z: 1.9369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 248437660}
@@ -3001,7 +3002,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.0047169924, g: 0.20124812, b: 1, a: 0.19215687}
+  m_Color: {r: 0.0047169924, g: 0.20124812, b: 1, a: 0.09019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
