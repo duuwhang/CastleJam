@@ -10,7 +10,7 @@ public class ItemMoving : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float moveDistance;
     float distance = 0;
-    float currentMoveDistance = 0;
+    float currentMoveDistance = 2f;
     int multiplier = 10;
     UnityEngine.Vector2 moveVector = new UnityEngine.Vector2(1, 0);
     int negative = -1;
@@ -21,13 +21,6 @@ public class ItemMoving : MonoBehaviour
     [SerializeField] int aggroTime;
     float aggroCounter = 0f;
 
-    public GameObject AggroArea;
-
-    public GameObject DamageArea;
-
-    public GameObject AttackRange;
-
-
 
 
     void Start()
@@ -37,42 +30,17 @@ public class ItemMoving : MonoBehaviour
         playerLocation = GameObject.FindWithTag("Player").transform;
         huntState = false;
     }
-    void Update()
-    {
 
-        // --- Patrol Movement ---
-        if (huntState) 
-        {
-            ChasePlayer();
-            return;
-        }
-
-        Patrol();
-    }
-
-    void Patrol()
-    {
-        currentMoveDistance = currentMoveDistance + 1 * Time.deltaTime * multiplier;
-        UnityEngine.Vector2 position =  transform.position;
-        position += moveVector * speed * direction * Time.deltaTime;
-        transform.position = position;
-        
-        if (moveDistance <= currentMoveDistance) 
-        {
-            direction = direction * negative;
-            currentMoveDistance = 0;
-        }
-    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         // --- Wall Detection ---
-        //FÜr einzelne Objekte gut
+        // FÜr einzelne Objekte gut
         // collision.attachedRigidbody.gameObject.tag != "Player";
         if (collision != null) collided = true;
         else collided = false;
 
-        if (collision.gameObject.TryGetComponent<Health>(out Health health) && collision.CompareTag("Player")) { health.Damage(155); }
+        if (collision.gameObject.TryGetComponent<Health>(out Health health) && collision.CompareTag("Player")) { health.Heal(1); }
     }
     public void ChasePlayer()
     {
@@ -91,13 +59,15 @@ public class ItemMoving : MonoBehaviour
         if (aggroCounter >= aggroTime)
         {
             huntState = false;
-            // aggroCounter = 0;
+            aggroCounter = 1f;
         }
     }
 
     public void Die()
     {
-        Destroy(gameObject);            
+        Destroy(gameObject);
+
+        // if (collision.gameObject.TryGetComponent<Health>(out Health health))  { health.Heal(1); }
     }
 
     
