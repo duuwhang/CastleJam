@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+// was called AggroTrigger, now EnemyScripts
 public class AggroTrigger : MonoBehaviour
 {
     public UnityEvent OnPlayerEnter;
