@@ -79,13 +79,13 @@ public class EnemyMovement : MonoBehaviour
         {
             direction = direction * negative;
             currentMoveDistance = moveDistance - currentMoveDistance;
-
+            Debug.Log(direction);
         }
         if (direction == 1)
         {
             transform.rotation = Quaternion.Euler(0, -180, 0);
         }
-        if (direction == 0)
+        else
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
