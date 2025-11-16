@@ -38,14 +38,17 @@ public class EnemyMovement : MonoBehaviour
     }
     void Update()
     {
-
+        Debug.Log(direction);
         // --- Patrol Movement ---
         if (huntState)
         {
             ChasePlayer();
             return;
         }
-
+        if (direction == 1)
+            transform.rotation = Quaternion.Euler(0, -180, 0);
+        else
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         Patrol();
     }
 
@@ -73,23 +76,22 @@ public class EnemyMovement : MonoBehaviour
 
         if (collision.gameObject.TryGetComponent<Health>(out Health health) && collision.CompareTag("Player")) { health.Damage(155); }
     }
+    void UpdateRotation()
+    {
+        if (direction == 1)
+            transform.rotation = Quaternion.Euler(0, -180, 0);
+        else
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
     public void TurnAround()
     {
         if (collided)
         {
             direction = direction * negative;
             currentMoveDistance = moveDistance - currentMoveDistance;
-            Debug.Log(direction);
+
         }
-        if (direction == 1)
-        {
-            transform.rotation = Quaternion.Euler(0, -180, 0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        // --- Das für Wall Turning ---
+        UpdateRotation();
     }
     public void ChasePlayer()
     {
