@@ -17,9 +17,16 @@ public class EnemyMovement : MonoBehaviour
     int direction = 1;
     bool collided;
     Transform playerLocation;
-    bool huntState;
+    public bool huntState;
     [SerializeField] int aggroTime;
     float aggroCounter = 0f;
+
+    public GameObject AggroArea;
+
+    public GameObject DamageArea;
+
+    public GameObject AttackRange;
+
 
 
 
@@ -32,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void Update()
     {
+
         // --- Patrol Movement ---
         if (huntState) 
         {
@@ -63,6 +71,8 @@ public class EnemyMovement : MonoBehaviour
         // collision.attachedRigidbody.gameObject.tag != "Player";
         if (collision != null) collided = true;
         else collided = false;
+
+        if (collision.gameObject.TryGetComponent<Health>(out Health health) && collision.CompareTag("Player")) { health.Damage(155); }
     }
     public void TurnAround()
     {
@@ -84,7 +94,7 @@ public class EnemyMovement : MonoBehaviour
         playerDirection.y = 0;
         playerDirection = playerDirection.normalized;
 
-        transform.position += playerDirection * speed * Time.deltaTime;
+        transform.position += playerDirection * speed * Time.deltaTime  ;
 
         aggroCounter += Time.deltaTime;
         if (aggroCounter >= aggroTime)

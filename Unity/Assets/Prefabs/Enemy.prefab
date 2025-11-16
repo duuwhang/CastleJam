@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 99176899277260283}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +158,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   speed: 5
   moveDistance: 40
+  huntState: 0
   aggroTime: 6
+  AggroArea: {fileID: 4826952203016373139}
+  DamageArea: {fileID: 8882627931502047625}
+  AttackRange: {fileID: 9077231748405423984}
 --- !u!50 &400307921882479724
 Rigidbody2D:
   serializedVersion: 5
@@ -198,6 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e91600b69ea4774da94a66828bb9ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  windUpTime: 1
+  attackDuration: 1
+  cooldownDuration: 1
+  AttackArea: {fileID: 8882627931502047625}
 --- !u!1 &573365856270910364
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +382,7 @@ GameObject:
   - component: {fileID: 1550105540252408989}
   - component: {fileID: 1116798072194808714}
   - component: {fileID: 8550969034807977908}
-  - component: {fileID: 8524953686904340864}
+  - component: {fileID: 4453637100314840353}
   m_Layer: 0
   m_Name: PlayerDetection
   m_TagString: Untagged
@@ -501,7 +509,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8524953686904340864
+--- !u!114 &4453637100314840353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -510,10 +518,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4826952203016373139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d670663ce54479a4f800b7be01703c5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ac94f2cc2d75a9418c041cfddd8c578, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollisionDetect
-  PlayerDetection:
+  m_EditorClassIdentifier: Assembly-CSharp::AggroTrigger
+  OnPlayerEnter:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4401191799637738725}
@@ -539,10 +547,10 @@ GameObject:
   - component: {fileID: 2231099271420022845}
   - component: {fileID: 4319690346349463989}
   - component: {fileID: 1060857670102301476}
-  - component: {fileID: 4370819240522701626}
+  - component: {fileID: 6456064095186702725}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Weapon
+  m_Name: EnemyWeapon
+  m_TagString: EnemyWeapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,7 +618,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.53333336, g: 0.18823531, b: 0.30588236, a: 1}
+  m_Color: {r: 0.23329054, g: 0.4811321, b: 0.12028302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -666,7 +674,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4370819240522701626
+--- !u!114 &6456064095186702725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -675,19 +683,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 8882627931502047625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 959dbbe0982f4404098381795ca0c6b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ac94f2cc2d75a9418c041cfddd8c578, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponCollisionDetect
-  WeaponDetection:
+  m_EditorClassIdentifier: Assembly-CSharp::AggroTrigger
+  OnPlayerEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4401191799637738725}
-        m_TargetAssemblyTypeName: EnemyMovement, Assembly-CSharp
-        m_MethodName: Die
-        m_Mode: 1
+      - m_Target: {fileID: 99176899277260283}
+        m_TargetAssemblyTypeName: EnemyAttack, Assembly-CSharp
+        m_MethodName: DoDamage
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -703,8 +711,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1206801348021404639}
   - component: {fileID: 2663148725447458214}
-  - component: {fileID: 1106652241401970134}
   - component: {fileID: 2693433480420663101}
+  - component: {fileID: 4086772524070017070}
   m_Layer: 0
   m_Name: AttackRangeDetection
   m_TagString: Untagged
@@ -775,7 +783,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.031877995, g: 1, b: 0, a: 0.34117648}
+  m_Color: {r: 1, g: 0.6470588, b: 0, a: 0.6392157}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -785,33 +793,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1106652241401970134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9077231748405423984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d670663ce54479a4f800b7be01703c5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollisionDetect
-  PlayerDetection:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 99176899277260283}
-        m_TargetAssemblyTypeName: EnemyAttack, Assembly-CSharp
-        m_MethodName: AttackRangeDetection
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!61 &2693433480420663101
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -858,3 +839,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4086772524070017070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9077231748405423984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac94f2cc2d75a9418c041cfddd8c578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AggroTrigger
+  OnPlayerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 99176899277260283}
+        m_TargetAssemblyTypeName: EnemyAttack, Assembly-CSharp
+        m_MethodName: Attack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
